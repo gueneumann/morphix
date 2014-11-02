@@ -1,6 +1,7 @@
 
+(This is from a old readme file. I plan to use teh Wiki to update the documentation)
 Morphix - A Fast and Portable Morphological Component for Inflectional Languages
-Günter Neumann, DFKI, Saarbrücken, 1999
+Günter Neumann, DFKI, Saarbrücken
 Hi everybody,
 
 Morphix is a very fast and robust morphological component for German. Besides inflectional analysis, it analyses compounds and is also able to generate wordforms from a given stem entry and some further (optional) morpho-syntactic information. Morphix is implemented in CommonAllegroLisp and should run under all operating systems which support ANSII CL.
