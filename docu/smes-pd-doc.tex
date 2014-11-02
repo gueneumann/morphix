@@ -1,0 +1,1041 @@
+\documentstyle[12pt,mymacros,named,epsf]{article}
+\newcommand{\smes}{{\sc smes}}
+
+
+\author{G\"unter Neumann\\ DFKI \\ Saarbr\"ucken, Germany}
+\title{The new Shallow Text Processor of {\sc smes}
+ \\ A brief description and user manual}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a brief description of using {\sc smes}, a shallow text
+processor and information 
+extraction core system for German. A detailed description of {\sc smes}
+and reference to interesting literature about IE can be found in
+\cite{Neumann:97a} and \cite{Neumann:97b}. 
+Note however, that the version described here
+differs in important ways from the one described in the above mentioned
+articles in the following important details:
+
+\begin{itemize}
+\item   a clean separation between linguistic and template processing
+        (as described in \cite{NeumannMazzini:98}); particularily this
+        means that {\sc smes} can be used in several ways:
+
+        \begin{itemize}
+        \item   for performing {\em shallow text analysis} only
+                
+        \item   for building naive IE-applications
+
+        \item   combining both: building advanced IE systems
+
+        \end{itemize}
+\item   replacement of the bidirectional FST through a
+        {\em cascaded chunk parser}
+
+\item   powerful morphological interface which supports efficient
+        feature relaxation and unification
+\end{itemize}
+
+{\sc smes} has a high degree of modularity. Every major component
+--- the tokenizer, the morphology, the chunk parser, the chunk combiner ---
+can be used in isolation. In order to make this modularity as
+transparent as possible, there exists common function interfaces to
+each individual module.
+
+We will now start describing the system. We will focus on the core
+functionality, i.e., a description will be given of how {\sc smes}
+can be used as {\em shallow text processor}.
+For the rest of the paper, we assume that a {\sc smes} user has basic
+knowledge of Unix, Emacs and Common Lisp.
+
+\section{Platform}
+Note that all information concerning installation are based on the
+hard- and software configuration as set up at the LT-Lab of DFKI.
+
+{\sc smes} is implemented in Allegro Common Lisp (ACL) under Solaris.
+It uses one tool written in C viz. the tokenizer (the executable C
+programm's name is {\sc scanner}). The program is accessible via
+\begin{center}
+/project/cl/systems/bin/solaris
+\end{center}
+
+When loading the {\sc smes} system the C--scanner will automatically
+be called from Lisp, so you do not need to call it by your own.\footnote{
+However, this is only true, if you use the standard loadup facilities
+mantained at our LT-lab. In that case the Unix path will be stored
+in the variable {\sc mk::bin-dir}.
+}
+
+\section{Loading {\sc smes}}
+
+{\sc smes} can be loaded in two ways
+\begin{itemize}
+\item   from a fresh ACL image you can load the compiled
+        code using the LT-lab's {\sc defsystem} tool
+        (which is based on an extension of the tool
+        developed by Mark Kantrowitz in 1991)
+        
+\item   or by loading a Lisp image containing all the necessary
+        code to run {\sc smes} and to define your own IE applications
+\end{itemize}
+
+\paragraph{Loading {\sc smes} using {\sc defsystem}}
+
+\smes\ can be loaded with the LT-lab's {\sc defsystem} tool
+(which is based on an extension of the tool
+developed by Mark Kantrowitz in 1991).\footnote{The adaptation and
+extension of the {\sc defsystem} tool have been carried out by Bernd
+Kiefer. If you have any specific questions or problems concerning the 
+{\sc defsystem} tool you are welcome to ask him. Bernd's o-tone:
+``Wenn die Leut huddel hann mit dem defsystem, 
+dann koenne die bei mir vorbeikomme.''}
+
+Before you can load \smes\ you have to write into your ACL's dot-file
+named {\sc .clinit.cl} the following expression:
+
+\begin{center}
+(push ``/project/cl/paradime/pd-smes/systems'' *central-registry*)
+\end{center}
+
+\noindent This will make sure that the correct set of modules are loaded.
+\smes\ is separated into three systems:
+\begin{itemize}
+\item   {\sc smes-core}: contains all functionality and call
+        of used subsystems (like {\sc morphix}, for example);
+
+\item   {\sc smes2html}: contains the HMTL-interface. It depends
+        on {\sc smes-core}, so loading of {\sc smes2html} will first
+        load {\sc smes-core};
+
+\item   {\sc smes-kb}: contains all currently defined knowledge
+        sources. It depends on {\sc smes-core} and {\sc smes2html}.
+        
+\end{itemize}
+
+Usually you will load {\sc smes-kb} to obtain all functionality and all
+data. You load it by entering:
+
+\begin{center}
+
+{\sc (load-system ``smes-kb'')}
+\end{center}
+
+
+\paragraph{Loading a Lisp-based {\sc smes} image}
+
+{\sc smes-pd} is the name of the current version of the Lisp image of
+{\sc smes}. It is defined on the basis of {\sc smes-kb} (see above).
+The image is stored under the Unix path
+\begin{center}
+/opt/acl/bin
+\end{center}
+
+You can load the image {\sc smes-pd} either from a terminal or from Emacs.
+In case you will load it from a terminal simply enter
+\begin{center}
+/opt/acl/bin/smes-pd
+\end{center}
+ 
+from any machine at our LT-lab, but preferably from more powerful
+machines like {\em limit}, {\em clause}, {\em leninist} or {\em lancelot}.
+
+You might also start {\sc smes-pd} from Emacs as follows:
+\begin{enumerate}
+\item call emacs
+\item M-x allegro
+\item M-x run-lisp
+\item run-lisp will ask for the settings of some variables
+\item Buffer: $<$your choice$>$
+\item Host: $<$one of the machine mentioned above$>$
+\item Process directory: $<$your choice$>$
+\item Image name: /opt/acl/bin/smes-pd
+\item Image arguments: $<$no value, i.e., enter return$>$
+\end{enumerate}
+
+If you succed in loading {\sc smes-pd} you will see in both cases the
+following Lisp prompt:
+\begin{verse}
+USER(1):
+\end{verse}
+
+\section{Initializing and exiting {\sc smes}}
+
+\paragraph{Initialization}
+Enter {\sc (init-smes)} if your are in the {\sc user} package
+--- or {\sc (user::init-smes)} if not ---
+in order to initialize {\sc smes}. This will
+automatically activate the {\sc scanner} process, will pop up the
+{\sc fegramed} menue, and will jump directly into the package {\sc
+smes}, the main package of \smes .
+
+\paragraph{Exiting}
+Enter {\sc (exit-smes)} from package {\sc
+smes} in order to exit {\sc smes}. Note that although this
+will not exit the current Lisp image, it is the prefered proper way for
+terminating the connections to the {\sc scanner} and {\sc fegramed}
+processes.
+
+\section{General notes on input and output}
+
+As already mentioned, {\sc smes} has a high degree of modularity. In
+order to make it transparent to the user, there exists a common function
+interface mechanism to each major module. 
+
+\paragraph{General form of input} All functions accept as
+(minimal) input a string which represents either
+\begin{itemize}
+\item   the ascii-text to be analyzed, or
+\item   a pathname to a file containing the ascii-text.
+\end{itemize}
+
+In order to distinguish between the two input possibilities, there exists
+two sorts of functions, viz. {\sc xxx-from-string} which calls the
+module {\sc xxx} for a string representing an ascii-text and {\sc
+xxx-from-file} where the input string is interpreted as a pathname.
+
+\paragraph{Global parameter for setting the input directory}
+
+The global variable {\sc smes::*corpora-dir*} bounds the pathname of
+a directory which contains text documents to be processed. The value
+must be a pathname. Simply entering the variable name will return the
+current used pathname. In order to change the current value --- say to 
+/home/cl-home/krieger/tmp/ --- enter
+
+\begin{verbatim}
+(setq smes::*corpora-dir* 
+        (pathname "/home/cl-home/krieger/tmp/"))
+\end{verbatim}
+
+Now, assuming you want to perform a morphological analysis of the
+content of a file named /home/cl-home/krieger/tmp/morph.txt you may
+enter
+
+\begin{verbatim}
+(morph-from-file "morph.txt")
+\end{verbatim}
+\noindent or 
+\begin{verbatim}
+(morph-from-file "/home/cl-home/krieger/tmp/morph.txt")
+\end{verbatim}
+
+\noindent Note that the default file type in \smes\ is 
+{\sc .txt}, so that you might even call
+\begin{verbatim}
+(morph-from-file "morph")
+\end{verbatim}
+
+\paragraph{General form of output}
+All {\sc -from-} functions return a list of all found results. Each result is also a
+list, but the concrete form may differ from module to module.
+
+\paragraph{HTML-based output} Additionaly, the results of the chunk
+parser can be mapped to HTML-marked up expressions which are stored in
+a temporary file. All functions which are able to map their resulting
+output to an HTML-format are named {\sc xxx-html-string} and 
+{\sc xxx-html-file}, respectively. Note that constructing the HTML-file
+is performed via a side-effect and that these functions return {\sc nil} has
+their result. Thus they are basically used fro creating marked-up text files.
+
+\section{The main modules}
+
+\subsection{Tokenization} The tokenizer is called via the following two
+functions:
+
+\begin{enumerate}
+
+\item   {\sc (scan-from-string <a text string>)}
+\item   {\sc (scan-from-file <a pathname string>)}
+
+\end{enumerate}
+
+The tokenizer returns a list of lists where each list represents a
+sentence. A sentence is simply a list of recognized tokens, where the
+last token belongs to an interpunction sign (one of . ? or !). Note
+that the tokenizer only performs a very simple recognition of sentence
+boundaries (actually completely context-free), because proper sentence
+boundary recognition will take place during chunk parsing. Example:
+
+\begin{verbatim}
+(scan-from-string "Ich gehe ! Peter sagt: ich auch. ") yields
+
+(("Ich" "gehe" "!") 
+ ("Peter" "sagt" (:SPECIAL . ":") "ich" "auch" "."))
+\end{verbatim}
+
+Word forms are represented as strings by the tokenizer; every other
+token, e.g., special characters or certain fragments, like time
+or date expression, is represented as a list). An EBNF description of
+the output structure can be found in appendix \ref{scan-bnf}.
+
+\subsection{Morphology}
+
+\paragraph{Basic functions}
+Morphological processing is performed by an extended version of Morphix
+\cite{Morphix:88} called Morphix++. Morphix++ is called via two
+functions:
+\begin{enumerate}
+
+\item   {\sc (morph-from-string <a text string> :time <boolean>)}
+\item   {\sc (morph-from-file <a pathname string> :time <boolean>)}
+
+\end{enumerate}
+\noindent where {\sc :time} is a boolean parameter (the default value
+is {\sc NIL}). When its value is
+{\sc T}, it outputs the real-time (i.e., including garbage collection
+and operation system calls) for each module, separately.
+
+The morphology returns a list of lists where each lists corresponds to
+a sentence. Each morphological analysed word form (word forms are
+represented as strings by the tokenizer; every other token, e.g., time
+or date expression is represented as a list) are represented as a
+triple of the form \tuple{stem,inflection,pos}, where
+$stem$ is a string or a list of strings (in the case of compounds),
+$inflection$ is the inflectional information, and $pos$ is the part of
+speech. Example (abbreviated where convenient):
+
+\begin{verbatim}
+
+(morph-from-string "Dem Ingenieur ist nichts zu schwoer. ") yields
+
+((("Dem"
+   ("d-det"
+    (((:TENSE . :NO) ... (:GENDER . :M) (:NUMBER . :S)
+      (:CASE . :DAT))
+     ((:TENSE . :NO) ... (:GENDER . :NT)
+      (:NUMBER . :S) (:CASE . :DAT)))
+    . :DEF))
+  ("Ingenieur"
+   ("ingenieur"
+    (((:TENSE . :NO) ... (:CASE . :NOM))
+     ((:TENSE . :NO) ... (:CASE . :DAT))
+     ((:TENSE . :NO) ... (:CASE . :AKK)))
+    . :N))
+  ("ist"
+   ("sei"
+    (((:TENSE . :PRES) ...
+      (:NUMBER . :S) (:CASE . :NO)))
+    . :AUX))
+  ("nichts" ("nichts" NIL . :PART))
+  ("zu" ("zu" NIL . :SUBORD)
+   ("zu"
+    (((:TENSE . :NO) ... (:CASE . :DAT)))
+    . :PREP))
+  ("schwoer"
+   ("schwoer"
+    (((:TENSE . :NO) (:FORM . :IMP) ...
+      (:NUMBER . :S) (:CASE . :NO)))
+    . :V))
+  ("." ("." NIL . :INTP))))
+\end{verbatim}
+
+\paragraph{Form of inflection} Morphix++ has a very flexible output
+interface allowing for different representations of the inflectional
+information of an analysed word. In \smes\ we use a feature vector
+representation in disjunctive normal form (DNF). Although Morphix++ has
+a rich tag set (see appendix \ref{morph-bnf}) we only make use of a small
+subset of inflectional features, namely:
+\begin{center}
+{\sc :tense :form :person :gender :number :case}
+\end{center}
+
+\noindent Note that in case a wordform misses one of the features (e.g., a
+noun form has no {\sc :tense} feature) the missing feature is returned with
+the special value {\sc :no}. During chunk parsing and agreement checking (see
+next section) this value is handled as an anonymous variable.
+
+\paragraph{Some usefull settings}
+The following variables can be used to parametrize morphological
+processing within \smes. Note that these variables are global so that
+their re-setting will affect every function which uses morphology as a
+subcomponent, e.g., the chunk parser:
+\vspace{5mm}
+
+\noindent {\bf variable name} {\sc smes::*apply-writing-rules*},
+{\bf range} {\sc T} or {\sc NIL},
+{\bf default}  {\sc T},
+{\bf documentation} triggers application of case-sensitive rules;
+if set to {\sc T}, then words are disambiguated on the basis of
+upper/lower writing (e.g., only nouns are written with an initial upper
+letter in German);
+\vspace{3mm}
+
+\noindent {\bf variable name} {\sc mo::*handle-unknowns* },
+{\bf range} {\sc T} or {\sc NIL},
+{\bf default} {\sc T},
+{\bf documentation} triggers  robust processing of compounds;
+if set to {\sc T} then compounds are recognized by means of longest
+matching substring found in the lexicon; e.g., the word ``adfadfeimer''
+will return result for ``eimer'' assuming that ``adfadf'' is no legal
+lexical stem;
+\vspace{3mm}
+
+\noindent {\bf variable name} {\sc mo::*all-composita* },
+{\bf range} {\sc T} or {\sc NIL},
+{\bf default} {\sc NIL},
+{\bf documentation} if {\sc NIL} perform decomposition according to
+longest matching lexical entries;
+otherwise, all possible decompositions are returned.
+
+\section{Part-of-speech disambiguation}
+Morphological ambiguous readings are disambiguated wrt. part-of-speech
+using {\em case-sensitive rules} which are applied after morphological
+processing but before chunk parsing.
+
+Generally, only nouns (and proper names) are written in standard German
+with an capitalized initial letter  (e.g., ``der Wagen'' {\em the car}
+vs. ``wir wagen'' {\em we venture}).
+Since typing errors are relatively rare in press releases (or similar
+documents) the application of case-sensitive rules are a reliable and
+straightforward tagging means for the German language. Of course, the 
+case-sensitive rules should only be applied, if there is enough
+evidence that the document's author actually followed typical German
+spelling rules. For that reason, the case-sensitive rules are only applied, if
+the value of a stastically driven lookahead function $\mbox{{\sc
+trigger-wr}}(k)$ 
+exceeds some threshold $y$ applied on the $k$-first tokens computed by the
+{\sc text tokenizer}. Actually, the method counts all strings $s$ (i.e.,
+possible wordforms) that do not follow the dot sign and all lower-case
+strings $ls$. Then if $s > 0$ and  $ls/s \leq y$
+then $\mbox{{\sc trigger-wr}}(k)$ returns T
+(meaning that 
+the case-sensitive rules will be applied); otherwise NIL is returned
+which means  that  no disambiguation on the basis of cases-sensitivity
+will be made. 
+
+\paragraph{Some useful variables}
+The following variables are used to set the parameters for the 
+case-sensitive rules:
+\vspace{5mm}
+
+\noindent {\bf variable name} {\sc *apply-writing-rules*}
+{\bf range} {\sc boolean}
+{\bf default} {\sc T}
+{\bf documentation} if T then case-sensitive rule 
+are active; inactive if set to NIL;
+\vspace{5mm}
+
+\noindent {\bf variable name} {\sc *check-oe-style*}
+{\bf range} {\sc boolean}
+{\bf default} {\sc T}
+{\bf documentation} if T apply function $\mbox{{\sc trigger-wr}}(k)$;
+if its value is T and *apply-writing-rules* is set to T
+then apply case-sensitive rules; if *check-oe-style* is set to NIL
+then apply in dependence of the current value of *apply-writing-rules*;
+\vspace{3mm}
+
+\noindent {\bf variable name} {\sc *oe-upper-limit*}
+{\bf range} {\sc integer}
+{\bf default} {\sc 30}
+{\bf documentation} length of the lookahead;
+\vspace{3mm}
+
+\noindent {\bf variable name} {\sc *oe-threshold*}
+{\bf range} {\sc real}
+{\bf default} {\sc 0.85}
+{\bf documentation} the threshold for activating the case-sensitive
+rules;
+
+
+\section{Chunk parsing}
+Chunk parsing is performed in three steps:
+\begin{itemize}
+\item   recognition of phrases
+\item   recognition of clauses
+\item   recognition of grammatical functions
+\end{itemize}
+
+The first two steps are performed by finite state grammars. The
+last step is performed by means of a huge subcategorization lexicon
+(about 25.000 entries) and some general mechanisms. 
+All three steps correspond to modules which
+can be called in isolation as described now.
+
+\subsection{Recognition of phrases}
+
+\paragraph{Basic functions}
+
+Phrase recognition is activated via the following functions
+(there also exists corresponding functions which create HTML-files of
+the found phrases and are described separately below):
+\begin{enumerate}
+
+\item   {\sc (fst-from-string <a text string>)  :fst <subgrammar> :time <boolean>)}
+\item   {\sc (fst-from-file <a pathname string> :fst <subgrammar> :time <boolean>)}
+
+\end{enumerate}
+where the optional parameter {\sc :time} returns the realtime used by 
+these functions. The parameter  {\sc :fst} is obligatory, where
+{\sc <subgrammar>} is the name of a phrasal
+subgrammar. The following table shows the list of the build-in
+subgrammars which are visable to the user (but note that \smes\
+supports writing and integration of your own grammars):
+\vspace{1cm}
+
+\begin{tabular}{||l|l||}\hline
+{\bf Name} & {\bf Description}\\\hline
+{\sc np-star}   & nominal phrases (NPs) only \\\hline
+{\sc main}      & nominal and prepositional phrases (PPs) only;\\%\cline{1-1}
+& note that no PP-attachment is performed\\\hline
+{\sc time-date} & complex time and date expressions\\\hline
+{\sc firmen-treiber} & company name information \\\hline
+{\sc number-treiber} & currency expressions\\\hline
+{\sc all-frags}      & all subgrammars (except firm recognition \\
+& but plus verb group recognition)\\
+& actually the result of this subgrammar \\
+& is passed to the clause level\\\hline
+  
+\end{tabular}
+
+\paragraph{Some notes about the subgrammars' output structure}
+Each subgrammar is expected to represent its resulting structures uniformly
+as feature value structures, together with its type and
+the corresponding
+start and end positions of the spanned input expression.
+We call these output structures {\em text items}. 
+A subgrammar's individiual output feature structure is expected to be
+the value of a feature {\sc sem}. Consider the following  simple
+example, where we use the subgrammar named {\sc main} (see above):
+
+\begin{verbatim}
+(fst-from-string 
+    "Der Mann sieht die Frau mit dem Fernrohr." :fst 'main)
+ \end{verbatim}
+
+\noindent which yields (abbreviated where convenient):
+
+\begin{verbatim}
+(((:SEM (:HEAD "mann") (:QUANTIFIER "d-det"))
+  (:AGR
+   ((:TENSE . :NO) ... (:CASE . :NOM)))
+  (:END . 2) (:START . 0) (:TYPE . :NP))
+ ((:SEM (:HEAD "frau") (:QUANTIFIER "d-det"))
+  (:AGR
+   ((:TENSE . :NO) ... (:GENDER . :F) (:NUMBER . :S)
+    (:CASE . :NOM))
+   ((:TENSE . :NO) ... (:GENDER . :F) (:NUMBER . :S)
+    (:CASE . :AKK)))
+  (:END . 5) (:START . 3) (:TYPE . :NP))
+ ((:SEM (:HEAD "mit") 
+        (:COMP (:QUANTIFIER "d-det") (:HEAD "fernrohr")))
+  (:SUB ((:SEM # #) (:AGR #) 
+         (:END . 8) (:START . 6) (:TYPE . :NP)))
+  (:AGR
+   ((:TENSE . :NO) ... (:GENDER . :NT) (:NUMBER . :S)
+    (:CASE . :DAT)))
+  (:END . 8) (:START . 5) (:TYPE . :PP)))
+\end{verbatim}
+
+The resulting structures are interpreted as head/modifier structures. 
+Note that the prepositional phrase (PP)
+``mit dem Fernrohr'' has not been attached to one of
+the nominal phrases (NPs) since this cannot be deterministically
+decided without further analysis.
+Note further that the PP's agreement information is fully disambiguated.
+
+\paragraph{HTML-based functions}
+
+The following two functions map the resulting output to some HTML
+format and store them into a file.
+\begin{enumerate}
+
+\item   {\sc (fst-html-string <a text string>  :fst <subgrammar> :time <boolean>)}
+\item   {\sc (fst-html-file <a pathname string> :fst <subgrammar> :time <boolean>)}
+
+\end{enumerate}
+
+They behave in the same way as their ``{\sc -from-}'' counterparts, with the
+notable difference that their return value is {\sc NIL}. 
+The resulting text items are stored in the file named
+\begin{center}
+``$\tilde{~}$/tmp/smes-phrase-res.html''
+\end{center}
+\noindent This file will be automatically created if it does not exist
+(we are assuming the user has already created a directory called {\em
+tmp} under her home directory) or will overwrite the file if it already exists.
+This file --- which will be superseded every time one of the ``{\sc -html-}''
+functions are called --- can now be displayed with some web-browser,
+e.g., Netscape. The {\sc html}-file consists of the marked-up text, where the
+markers are linked to a glossary. The glossary displays 
+the internal text items in form of a feature matrix, where
+not all internal information is visualized in order to support readibility.
+
+\subsection{Recognition of Clauses}
+\paragraph{Basic functions}
+Clause recognition is called on the result of phrase recognition (see
+previous subsection). You can call clause recognition via the following
+functions (where their ``{\sc -html-}'' counterparts are described below):
+\begin{enumerate}
+
+\item   {\sc (parse-from-string <a text string>  :time <boolean>)}
+\item   {\sc (parse-from-file <a pathname string> :time <boolean>)}
+
+\end{enumerate}
+
+\noindent where {\sc :time} is a boolean parameter (the default value
+is {\sc NIL}). When its value is
+{\sc T}, it outputs the real-time (i.e., including garbage collection
+and operation system calls) for each module, separately.
+
+These functions perform (in that order) tokenization, morphological analysis,
+phrasal recognition, and finally clause recognition. Note that in our
+current version, {\sc all-frags} is the subgrammar automatically
+called for performing phrase recognition. Furthermore note that clause
+recognition is processed with the same finite state tool, but with a
+specific clause grammar, which can be viewed as a set of sentence
+patterns.
+
+\paragraph{HTML-based functions}
+
+The following two functions map the resulting output to some HTML
+format and stores it into a file.
+\begin{enumerate}
+
+\item   {\sc (parse-html-string <a text string>  :time <boolean>)}
+\item   {\sc (parse-html-file <a pathname string> :time <boolean>)}
+
+\end{enumerate}
+
+The analyzed text together with its parsed results
+are stored in the file named
+\begin{center}
+``$\tilde{~}$/tmp/smes-parse-res.html''
+\end{center}
+
+\paragraph{Determining sentence boundaries}
+Before clause
+recognition is called, the flat stream of recognized phrases is
+partitioned into a list of 
+sentences according to a function {\sc make-sentence}
+which is called after phrase recognition but before clause recognition.
+Then clause recognition is applied on each sentence individually. Each
+sentence corresponds to the list of all found phrases and is processed
+by means of the finite-state clause grammar simply named {\sc parser}.
+Using this grammar the chunk parser tries to combine every phrase to
+build up a parse tree. If not all possible phrases fit into one
+structure, the parser returns a {\em partial} parse tree, such that a list
+consisting of the ``longest'' matching common sub-sentence and a list
+of all non-fitting remaining phrases is returned. We will simply call such a
+partial result an {\em incomplete parse tree}.
+
+\paragraph{Some notes on the structure of parse trees}
+Linguistically, clause recognition is performed by means of a
+dependency-based grammar, i.e., the resulting parse tree is actually a
+dependency tree. However, in the same way as we delay PP-attachment
+during phrase recognition, the dependency grammar only defines {\em
+upper bounds} for attachment, which is mainly defined by the head
+element. Since a dependency tree is potentially recursive, such trees are not
+totally flat, but coarse-grained wrt. attachement. We call such a
+dependency tree an {\em underspecified dependency tree}.
+Consider the following example:
+
+\begin{verbatim}
+(parse-from-string 
+    "Der Mann sieht die Frau mit dem Fernrohr.")
+ \end{verbatim}
+
+\noindent which yields the following underspecified dependency tree 
+(abbreviated where convenient):
+
+\begin{verbatim}
+(((:PPS
+   ((:SEM (:HEAD "mit") 
+          (:COMP (:QUANTIFIER "d-det") (:HEAD "fernrohr")))
+    (:SUB ...)
+    (:AGR
+     ((:TENSE . :NO) ... (:CASE . :DAT)))
+    (:END . 8) (:START . 5) (:TYPE . :PP)))
+  (:NPS
+   ((:SEM (:HEAD "mann") (:QUANTIFIER "d-det"))
+    (:AGR
+     ((:TENSE . :NO) ... (:CASE . :NOM)))
+    (:END . 2) (:START . 0) (:TYPE . :NP))
+   ((:SEM (:HEAD "frau") (:QUANTIFIER "d-det"))
+    (:AGR
+     ((:TENSE . :NO) ... (:CASE . :NOM))
+     ((:TENSE . :NO) ... (:CASE . :AKK)))
+    (:END . 5) (:START . 3) (:TYPE . :NP)))
+  (:VERB
+   (:COMPACT-MORPH
+    ((:TEMPUS . :PRAES) ... (:PERSON . 3)
+     (:GENUS . :AKTIV)))
+   (:MORPH-INFO
+    ((:TENSE . :PRES) (:FORM . :FIN) ... (:CASE . :NO)))
+   (:ART . :FIN) (:STEM . "seh") 
+   (:FORM . "sieht") (:C-END . 3) (:C-START . 2)
+   (:TYPE . :VERBCOMPLEX))
+  (:END . 8) (:START . 0) (:TYPE . :VERB-NODE)))
+
+\end{verbatim}
+
+
+In this structure, the feature ``:VERB'' collects all information of the
+complex verb group which is the head of the sentence. ``:PPS'' collects
+all PPs and ``:NPS'' is a list of all dependent nominal phrases.
+An EBNF of the currently covered clausal expression can be found in
+Appendix \ref{clause}
+
+\subsection{Recognition of Grammatical Functions}
+\paragraph{Basic functions}
+The clause together with its grammatical function can be determined
+via the following
+functions (where their ``{\sc -html-}'' counterparts are described below):
+\begin{enumerate}
+
+\item   {\sc (parse-gf-from-string <a text string>  :time <boolean>)}
+\item   {\sc (parse-gf-from-file <a pathname string> :time <boolean>)}
+
+\end{enumerate}
+
+They behave in the same way as the functions called for performing clause
+recognition (i.e., {\sc parse-from-string} and {\sc parse-from-file}
+the above).
+
+\paragraph{HTML-based functions}
+
+The following two functions map the resulting output to some HTML
+format and stores it into a file.
+\begin{enumerate}
+
+\item   {\sc (parse-gf-html-string <a text string>  :time <boolean>)}
+\item   {\sc (parse-gf-html-file <a pathname string> :time <boolean>)}
+
+\end{enumerate}
+
+They behave in the same way as the {\sc html}-based functions called for
+clause recognition (see above).
+
+\paragraph{Some general remarks}
+
+After clause recognition, the available information consists basically in a
+dependency tree provided with upper borders limiting the attachment
+possibilities of non-head elements, which we call {\em modifiers}.\footnote{A
+terminological remark: here we use the label {\em modifier} only in connection
+to the status of these elements as non-heads. 
+In other words, modifiers are not opposed to arguments: they include {\em
+both} candidate {\em arguments} and {\em adjuncts}, to be distinguished by the
+GFR module described here.} As a further step in during chunk parsing
+the {\em grammatical
+function recognition module} (GFR) takes this kind of structures as its input,
+and computes an additional layer of information, consisting of:
+
+\begin{enumerate}
+\item   The identification of possible {\em arguments} on the basis of
+        the lexical subcategorization information available for the
+        local head. We call the resulting structure a (partial)
+        {\em underspecified functional description} (UFD).
+
+\item   The marking of the other non-head elements of the UFD as {\em
+        adjuncts}, possibly       
+        by applying a distinctive criterion for standard and specialized
+        adjuncts. Adjuncts ---opposed to arguments, for which an attachment
+        resolution is attempted--- have to be considered underspecified
+        wrt.~attachment: in other words, their dependency relation to the head
+        counts as an upper border rather than an attachment.
+\end{enumerate}
+
+Currently, GFR applies only for verbal groups (no analysis of argumental
+structure internal to other classes of constituents, like NPs or ADJPs for
+example, has been provided so far). Therefore the recursion potential
+is limited to subclauses (either as arguments or adjuncts), that are
+internally analyzed for GFs in the same way as the main clause is,
+while all the other constituents maintain the same structure they had
+in the input structure. For example, the result computed by GFR for the 
+the sentence ``Der Mann sieht die Frau mit dem Fernrohr'', i.e., its
+UFD is as follows:
+
+\begin{verbatim}
+(((:SYN
+    (:SUBJ
+     (:RANGE (:SEM (:HEAD "mann") (:QUANTIFIER "d-det"))
+      (:AGR
+       ((:PERSON . 3) (:GENDER . :M) 
+        (:NUMBER . :S) (:CASE . :NOM)))
+      (:END . 2) (:START . 0) (:TYPE . :NP)))
+    (:OBJ
+     (:RANGE (:SEM (:HEAD "frau") (:QUANTIFIER "d-det"))
+      (:AGR
+       ((:PERSON . 3) (:GENDER . :F) 
+        (:NUMBER . :S) (:CASE . :NOM))
+       ((:PERSON . 3) (:GENDER . :F) 
+        (:NUMBER . :S) (:CASE . :AKK)))
+      (:END . 5) (:START . 3) (:TYPE . :NP)))
+    (:NP-MODS)
+    (:PP-MODS
+     ((:SEM (:HEAD "mit") 
+            (:COMP (:QUANTIFIER "d-det") (:HEAD "fernrohr")))
+      (:SUB
+       ((:SEM (:HEAD "fernrohr") (:QUANTIFIER "d-det"))
+        (:AGR
+         ((:PERSON . 3) (:GENDER . :NT) (:NUMBER . :S)
+          (:CASE . :DAT)))
+        (:END . 8) (:START . 6) (:TYPE . :NP)))
+      (:AGR
+       ((:PERSON . 3) (:GENDER . :NT) 
+        (:NUMBER . :S) (:CASE . :DAT)))
+      (:END . 8) (:START . 5) (:TYPE . :PP)))
+    (:SC-MODS)
+    (:PROCESS
+     (:COMPACT-MORPH
+      ((:TEMPUS . :PRAES) ... (:GENUS . :AKTIV)))
+     (:MORPH-INFO
+      ((:TENSE . :PRES) ... (:NUMBER . :S)
+       (:CASE . :NO)))
+     (:ART . :FIN) (:STEM . "seh") (:FORM . "sieht") 
+     (:TYPE . :VERBCOMPLEX))
+    (:FRAME ((:NP . :NOM) (:NP . :AKK))) 
+    (:START . 0) (:END . 8) 
+    (:SQL-TYPE . :GF-VERB-NODE)
+    (:TYPE . :SUBJ-OBJ))))
+\end{verbatim}
+
+\paragraph{Subcategorized GFs} The grammatical functions recognized by GFR
+correspond to a set of role labels, implicitely ordered according to an {\em
+obliquity hierarchy}, including: 
+
+\begin{itemize}
+\item SUBJ: deep subject;
+\item OBJ: deep object;
+\item OBJ1: indirect object;
+\item P-OBJ: prepositional object;
+\item XCOMP: subcategorized subclause.
+\end{itemize}
+
+These label are meant to denote {\em deep grammatical functions}, such
+that, for
+instance, the notion of subject and object does not necessarily correspond to
+the surface subject and direct object in the sentence. This is precisely the
+case for passive sentences, whose arguments are assigned the same roles as in
+the corresponding active sentence.
+
+\paragraph{Adjuncts}
+
+All the NPs, PPs and Subclauses that have not been recognized as arguments
+compatible with the selected frame are collected in {\em adjunct
+lists}\footnote{They are basically list-valued attribute-value pairs. In the
+actual format used in STP modules, they are expressed as {\em
+associative lists} of the form
+{\tt (label . (item1 item2 \dots))} or the equivalent {\tt (label item1 item2
+\dots)}.}. We distinguish two different sets of adjunct lists; the first one
+includes three {\em general adjunct lists}, namely:
+
+\begin{itemize}
+\item NP-MODS, for modifier NPs;
+\item PP-MODS for modifier PPs;
+\item SC-MODS for modifier Subclauses.
+\end{itemize}
+
+After grammatical functions recognition, all the three above attributes are
+present (possibly with an empty list as value) in every UFD . Besides them, a
+second set of {\em special adjunct lists} is available. The most remarkable
+feature of {\em special adjunct lists} is that they are not defined as a fixed
+set, being rather triggered ``on the fly'' by the presence of some special
+information in adjunct phrases themselves: in the current implementation, this
+``special information'' is encoded by means of the feature SUBTYPE.  It is
+possible to define specialized finite state grammars (see\ref{phrase-rec}),
+aimed at identifying restricted classes of phrases (for instance, temporal or
+locational expressions), which impose for that phrases to be treated as special
+adjuncts by means of the value assigned to SUBTYPE. In the GFR grammar,
+a set of
+correspondences between values of SUBTYPE and special adjunct lists can be
+declared; here is some example:
+
+\begin{itemize}
+\item \{LOC-PP, LOC-NP, RANGE-LOC-PP\} $\mapsto$ LOC-MODS
+\item \{DATE-PP, DATE-NP\}  $\mapsto$ DATE-MODS
+\end{itemize}
+
+This means that, for example, if a modifier marked as LOC-NP is present in an
+UFD, then an attribute LOC-MODS is going to be created in the corresponding UFD
+after GF recognition, whose value is a list containing that modifier;
+if another 
+modifier belonging to the same class (say a RANGE-LOC-PP) is found, it
+is simply
+added to that list. The same mechanism applies for each class of SUBTYPE values
+considered in the GFR grammar.
+
+
+\appendix
+\section{EBNF syntax for output of text tokenizer}
+\label{scan-bnf}
+Note that all tokens between a left and right pointmark are collected
+togther with the right pointmark into one list. However, since this is
+actually too simple, we actually flatten this embedded list
+representation in the next processing units. A note on the form of the
+BNF: only nonterminals are written using the italics font. 
+Terminal characters are enclosed in single
+quotes ` ', and strings are enclosed in duple quotes `` '':
+\vspace{1cm}
+
+\begin{tabular}{lcl}
+
+{\it Tokenstream}  &  ~~::=~~~   
+                   & `(' {\it Tokenlist}$^\ast$ `)' \\
+
+{\it Tokenlist}    &  ~~::=~~~   
+                   & `(' [{\it Wordform} $\mid$ {\it SpecialWords}
+                   $\mid$ {\it Tokenassoc}]$^\ast$ {\it Pointmark} `)'\\
+
+{\it Wordform}     & ~~::=~~~ 
+                   &``{\it Letter}$^\ast$(`-'{\it
+                   Letter}$^+$)$^\ast$`''{\it Letter}{\it Letter}$^\ast$''\\ 
+
+{\it SpecialWords} & ~~::=~~~ 
+                   & {\it Abbrev} $\mid$ {\it Clock} $\mid$ {\it Ct}
+                   $\mid$ {\it St} \\
+
+{\it Tokenassoc}   & ~~::=~~~ 
+                   & {\it Keywrd} $\mid$ {\it Quoted} $\mid$ {\it
+                   Integer} $\mid$ {\it Ordinal} $\mid$ \\
+                   &   
+                   &  {\it Time} $\mid$ {\it Date} $\mid$ {\it Cluster}
+                   $\mid$ {\it Special} \\ 
+
+{\it Pointmark}    & ~~::=~~~ 
+                   & ``.'' $\mid$ ``!'' $\mid$ ``?'' $\mid$``\&'' \\
+\end{tabular}
+\vspace{1cm}
+
+\section{Morphological features}
+\label{morph-bnf}
+
+The following table enumerates the features together with
+their domain:
+
+\begin{tabular}{lll}
+:cat     & $\rightarrow$ & :n :v :aux :modv :a :attr-a :def :indef :prep\\
+         &               & :relpron :perspron :refpron :posspron :whpron \\
+         &               & :ord :card :vpref :adv :whadv \\
+         &               & :coord :subord  :intp :part\\
+:mcat    & $\rightarrow$ & :n-adj :det-word\\
+:sym     & $\rightarrow$ & :open-para :closed-para :!sign :questsign\\ 
+         &               & :seperator :dot :dotdot :semikolon :comma\\
+:comp    & $\rightarrow$ & :p :c :s\\
+:comp-f  & $\rightarrow$ & :pred-used\\
+:det     & $\rightarrow$ & :none :indef :def\\
+:tense   & $\rightarrow$ & :pres :past :subjunct-1 :sibjunct-2\\
+:form    & $\rightarrow$ & :fin :infin :infin-zu :psp :prp \\
+         &               & :prp-zu :imp \\
+:person  & $\rightarrow$ & 1 2 :2a 3 :anrede\\
+:gender  & $\rightarrow$ & :nfm :m :f :nt\\
+:number  & $\rightarrow$ & :s :p\\
+:case    & $\rightarrow$ & :nom :gen :dat :akk\\     
+\end{tabular}
+
+\section{BNF for name subgrammars}
+\label{names}
+
+Company names:
+
+\begin{verbatim}
+Firm-Expr: Firm-NP, Firm-PP
+
+Firm-Expr -> [ start: number    
+               end: number    
+               agr: Morphix-Vector
+               sem: [ loc: string   
+                      status: "i.L."   
+                      abbr: string
+                      name: string  
+                      comp-form: CFs  ] ]
+
+Firm-NP -> [ sem: [ nation: string   
+                    business: string   
+                    daughter: string
+                    mother: string   
+                    part-owner: string ] ]
+
+Firm-PP -> [ prep: string
+             sem: [ nation: string   
+                    business: string   
+                    daughter: string
+                    mother: string      
+                    part-owner: string ] ]
+
+Stand-alone-names -> [ Sem: [ short-form: T|F ] ]
+
+Firm-Coor-NP -> [ start: number   
+                  end: number
+                  conjuncts: list(Firm-Expr) ]
+
+CFs: "ag", "gmbh", "gruppe", "holding", 
+     "trust", "corporation",
+     "aktiengesellschaft", 
+     "Inc", "Corp", "Ltd", 
+     "Limited", "Corp", "Incorporated"
+\end{verbatim}
+
+Special year expression:
+
+\begin{verbatim}
+Year-Expr -> [ start: number    end: number    
+               sem: [ year1: number   year2: number
+                      months: [ from: number    to: number ]
+                      fiskaljahr: T|F   geschjahr: T|F
+                      geschper: T|F ]                         ]
+\end{verbatim}
+
+
+
+\section{EBNF of current clause grammar}
+\label{clause}
+
+\begin{tabular}{lll}
+
+Verb-node & $\rightarrow$ & [:verb: Verbcomplex\\
+                          && :NPs         : list(NomObj)\\
+              && :PPs         : list(PraePhr) \\
+              && :dir-speech  : verb-structure[verb $\mid$ art $\mid$ fin]\\
+              && :subclauses  : list(Subcl)   \\
+              && :relative cl.: list(Relcl)   \\
+              && :infinCompl  : InfCompl\\
+              && :start: number  \\
+              && :end: number  ]\\                    
+
+Coord-verb-node & $\rightarrow$ &  [:conj: und  $\mid$  oder  $\mid$ 
+                                          jedoch  $\mid$  aber $\dots$ \\
+                    && :art: :complete  $\mid$  :incomplete\\
+                    && :conjuncts: list(Verb-node)  ]\\
+
+InfCompl & $\rightarrow$ & [:subconj: ohne  $\mid$  anstatt  $\mid$  um
+              $\mid$  bare\\ 
+             && :content: verb-structure[:verb  $\mid$  :art  $\mid$  :infin]\\
+
+Subcl & $\rightarrow$ &
+         [: subconj: weil $\mid$ wenn $\mid$ als $\mid$ dass $\mid$ indem
+         $dots$ \\ 
+          && :content: verb-structure[:verb  $\mid$  :art  $\mid$  :infin]  ]\\
+
+Relcl & $\rightarrow$ & [:rel-pron: [:form: der $\mid$ , die $\mid$  das
+                     $dots$ \\  
+                     && :morph-info: Dnf-Vector  ]\\
+          && :content: verb-structure[:verb  $\mid$  :art  $\mid$  :infin]]\\
+
+Verbcomplex & $\rightarrow$ & [:form: string    :stem: string
+                :pred-adj: T $\mid$ F \\
+                && :modal: string   :negation: T $\mid$ F   :art: :fin  $\mid$ 
+                :infin  $\mid$  :part\\ 
+                && morph-info: [tempus: Tempus\\
+                             && :genus: :active  $\mid$  :passive\\
+                             && :person: 1 $\mid$ 2 $\mid$ 3\\
+                             && :numerus: :s $\mid$ :p\\
+                && modus: Ind  $\mid$  Konj    ] ] \\
+
+Tempus: & $\rightarrow$ &
+        :perf $\mid$  :pres $\mid$  :plusquamperf $\mid$  :fut1 $\mid$
+        :fut2 $\mid$  :imperfekt \\
+NomObj: & $\rightarrow$ &
+        NP $\mid$  Coord-NP $\mid$  Firm-NP $\mid$  PersPron $\mid$ 
+        Firm-Coor-NP\\                 
+
+PraePhr: & $\rightarrow$ & PP $\mid$  Year-Expr $\mid$  Firm-PP
+
+\end{tabular}
+
+\newpage
+\bibliographystyle{named}
+\bibliography{bibtex-abbrev,paradime-project,neummy,bibtex-crossref}
+\end{document}

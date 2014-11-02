@@ -1,0 +1,804 @@
+
+<COCW id="1" ln="0"><WF>der</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="2" ln="0"><WF>deren</WF><RS><R stem="deren" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="3" ln="0"><WF>dereinst</WF><RS><R stem="dereinst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="4" ln="0"><WF>derjenige</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="5" ln="0"><WF>derjenigen</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="6" ln="0"><WF>derselbe</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="7" ln="0"><WF>derselben</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="8" ln="0"><WF>derart</WF><RS><R stem="derart" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="9" ln="0"><WF>dergestalt</WF><RS><R stem="dergestalt" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="10" ln="0"><WF>dergleichen</WF><RS><R stem="dergleichen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="11" ln="0"><WF>derzeit</WF><RS><R stem="derzeit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="12" ln="0"><WF>derweil</WF><RS><R stem="derweil" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="13" ln="0"><WF>dem</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="14" ln="0"><WF>demjenigen</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="15" ln="0"><WF>demselben</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="16" ln="0" umlaut="T" doubles="T"><WF>demgemaess</WF><RS><R stem="demgemaess" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="17" ln="0"><WF>demnach</WF><RS><R stem="demnach" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="18" ln="0" umlaut="T"><WF>demnaechst</WF><RS><R stem="demnaechst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="19" ln="0"><WF>demzufolge</WF><RS><R stem="demzufolge" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="20" ln="0"><WF>den</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="21" ln="0"><WF>denen</WF><RS><R stem="denen" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="22" ln="0"><WF>denjenigen</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="23" ln="0"><WF>denselben</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="24" ln="0"><WF>denn</WF><RS><R stem="denn" pos="COORD" freq="1" ln="0"/><R stem="denn" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="25" ln="0"><WF>dennoch</WF><RS><R stem="dennoch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="26" ln="0"><WF>des</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="27" ln="0" doubles="T"><WF>dessen</WF><RS><R stem="dessen" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="28" ln="0" doubles="T"><WF>dessenungeachtet</WF><RS><R stem="dessenungeachtet" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="29" ln="0" doubles="T"><WF>desselben</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="30" ln="0"><WF>desjenigen</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="31" ln="0"><WF>desgleichen</WF><RS><R stem="desgleichen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="32" ln="0"><WF>deshalb</WF><RS><R stem="deshalb" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="33" ln="0"><WF>deswegen</WF><RS><R stem="deswegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="34" ln="0"><WF>desweiteren</WF><RS><R stem="desweiteren" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="35" ln="0"><WF>desto</WF><RS><R stem="desto" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="36" ln="0"><WF>deiner</WF><RS><R stem="dein" pos="POSSPRON" freq="1" ln="0"/><R stem="deiner" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="37" ln="0"><WF>die</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="38" ln="0"><WF>diejenige</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="39" ln="0"><WF>diejenigen</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="40" ln="0"><WF>dies</WF><RS><R stem="dies" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="41" ln="0"><WF>dieselbe</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="42" ln="0"><WF>dieselben</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="43" ln="0" doubles="T"><WF>diesseits</WF><RS><R stem="diesseits" pos="ADV" freq="1" ln="0"/><R stem="diesseits" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="44" ln="0"><WF>diesmal</WF><RS><R stem="diesmal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="45" ln="0" umlaut="T"><WF>diesbezueglich</WF><RS><R stem="diesbezueglich" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="46" ln="0"><WF>dienstags</WF><RS><R stem="dienstags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="47" ln="0"><WF>dich</WF><RS><R stem="dich" pos="REFPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="48" ln="0"><WF>dir</WF><RS><R stem="dir" pos="REFPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="49" ln="0"><WF>da</WF><RS><R stem="da" pos="SUBORD" freq="1" ln="0"/><R stem="da" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="50" ln="0"><WF>das</WF><RS><R stem="d-det" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="51" ln="0"><WF>dasjenige</WF><RS><R stem="d-jenig" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="52" ln="0" doubles="T"><WF>dass</WF><RS><R stem="dass" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="53" ln="0" doubles="T"><WF>dasselbe</WF><RS><R stem="d-selb" pos="DEF" freq="1" ln="0"/></RS></COCW>
+<COCW id="54" ln="0"><WF>daselbst</WF><RS><R stem="daselbst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="55" ln="0"><WF>dank</WF><RS><R stem="dank" pos="V" freq="1" ln="0"/><R stem="dank" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="56" ln="0" umlaut="T"><WF>dankeschoen</WF><RS><R stem="dankeschoen" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="57" ln="0"><WF>danach</WF><RS><R stem="danach" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="58" ln="0"><WF>daneben</WF><RS><R stem="daneben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="59" ln="0"><WF>dann</WF><RS><R stem="dann" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="60" ln="0"><WF>dar</WF><RS><R stem="dar" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="61" ln="0"><WF>daran</WF><RS><R stem="daran" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="62" ln="0"><WF>darauf</WF><RS><R stem="darauf" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="63" ln="0"><WF>daraufhin</WF><RS><R stem="daraufhin" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="64" ln="0"><WF>daraus</WF><RS><R stem="daraus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="65" ln="0"><WF>darin</WF><RS><R stem="darin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="66" ln="0" umlaut="T"><WF>darueber</WF><RS><R stem="darueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="67" ln="0" umlaut="T"><WF>darueberhinaus</WF><RS><R stem="darueberhinaus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="68" ln="0"><WF>darum</WF><RS><R stem="darum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="69" ln="0"><WF>darunter</WF><RS><R stem="darunter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="70" ln="0"><WF>dabei</WF><RS><R stem="dabei" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="71" ln="0"><WF>dadurch</WF><RS><R stem="dadurch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="72" ln="0" umlaut="T"><WF>dafuer</WF><RS><R stem="dafuer" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="73" ln="0"><WF>dagegen</WF><RS><R stem="dagegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="74" ln="0"><WF>daher</WF><RS><R stem="daher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="75" ln="0"><WF>dahin</WF><RS><R stem="dahin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="76" ln="0"><WF>dahinter</WF><RS><R stem="dahinter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="77" ln="0"><WF>damit</WF><RS><R stem="damit" pos="SUBORD" freq="1" ln="0"/><R stem="damit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="78" ln="0"><WF>damals</WF><RS><R stem="damals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="79" ln="0"><WF>davon</WF><RS><R stem="davon" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="80" ln="0"><WF>davor</WF><RS><R stem="davor" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="81" ln="0"><WF>dazu</WF><RS><R stem="dazu" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="82" ln="0"><WF>dazwischen</WF><RS><R stem="dazwischen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="83" ln="0"><WF>du</WF><RS><R stem="du" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="84" ln="0"><WF>durch</WF><RS><R stem="durch" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="85" ln="0"><WF>durchs</WF><RS><R stem="durchs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="86" ln="0"><WF>durcheinander</WF><RS><R stem="durcheinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="87" ln="0"><WF>durchweg</WF><RS><R stem="durchweg" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="88" ln="0"><WF>durchaus</WF><RS><R stem="durchaus" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="89" ln="0"><WF>donnerstags</WF><RS><R stem="donnerstags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="90" ln="0"><WF>dort</WF><RS><R stem="dort" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="91" ln="0"><WF>dorther</WF><RS><R stem="dorther" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="92" ln="0"><WF>dorthin</WF><RS><R stem="dorthin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="93" ln="0"><WF>doch</WF><RS><R stem="doch" pos="COORD" freq="1" ln="0"/><R stem="doch" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="94" ln="0" doubles="T"><WF>draussen</WF><RS><R stem="draussen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="95" ln="0"><WF>dreimal</WF><RS><R stem="dreimal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="96" ln="0"><WF>drinnen</WF><RS><R stem="drinnen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="97" ln="0"><WF>drittens</WF><RS><R stem="drittens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="98" ln="0"><WF>droben</WF><RS><R stem="droben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="99" ln="0" umlaut="T"><WF>drueben</WF><RS><R stem="drueben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="100" ln="0"><WF>drunten</WF><RS><R stem="drunten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="101" ln="0"><WF>ab</WF><RS><R stem="ab" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="102" ln="0"><WF>abseits</WF><RS><R stem="abseits" pos="ADV" freq="1" ln="0"/><R stem="abseits" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="103" ln="0" umlaut="T"><WF>abzueglich</WF><RS><R stem="abzueglich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="104" ln="0"><WF>abend</WF><RS><R stem="abend" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="105" ln="0"><WF>abends</WF><RS><R stem="abends" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="106" ln="0"><WF>aber</WF><RS><R stem="aber" pos="COORD" freq="1" ln="0"/><R stem="aber" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="107" ln="0"><WF>abermals</WF><RS><R stem="abermals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="108" ln="0" umlaut="T"><WF>abwaerts</WF><RS><R stem="abwaerts" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="109" ln="0" umlaut="T"><WF>aehnlich</WF><RS><R stem="aehnlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="110" ln="0"><WF>am</WF><RS><R stem="am" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="111" ln="0"><WF>an</WF><RS><R stem="an" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="112" ln="0"><WF>anfangs</WF><RS><R stem="anfangs" pos="ADV" freq="1" ln="0"/><R stem="anfangs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="113" ln="0"><WF>angesichts</WF><RS><R stem="angesichts" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="114" ln="0"><WF>anhand</WF><RS><R stem="anhand" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="115" ln="0" umlaut="T" doubles="T"><WF>anlaesslich</WF><RS><R stem="anlaesslich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="116" ln="0"><WF>ans</WF><RS><R stem="ans" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="117" ln="0"><WF>anstatt</WF><RS><R stem="anstatt" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="118" ln="0"><WF>anstandshalber</WF><RS><R stem="anstandshalber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="119" ln="0"><WF>anstandslos</WF><RS><R stem="anstandslos" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="120" ln="0"><WF>anstelle</WF><RS><R stem="anstelle" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="121" ln="0"><WF>antwortlich</WF><RS><R stem="antwortlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="122" ln="0"><WF>aneinander</WF><RS><R stem="aneinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="123" ln="0"><WF>anbei</WF><RS><R stem="anbei" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="124" ln="0"><WF>andererseits</WF><RS><R stem="andererseits" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="125" ln="0"><WF>andernfalls</WF><RS><R stem="andernfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="126" ln="0"><WF>anders</WF><RS><R stem="anders" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="127" ln="0"><WF>anderswo</WF><RS><R stem="anderswo" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="128" ln="0"><WF>anderthalb</WF><RS><R stem="anderthalb" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="129" ln="0"><WF>au</WF><RS><R stem="au" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="130" ln="0"><WF>auf</WF><RS><R stem="auf" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="131" ln="0"><WF>aufs</WF><RS><R stem="aufs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="132" ln="0"><WF>aufgrund</WF><RS><R stem="aufgrund" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="133" ln="0"><WF>aufrecht</WF><RS><R stem="aufrecht" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="134" ln="0"><WF>aufeinander</WF><RS><R stem="aufeinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="135" ln="0" umlaut="T"><WF>aufwaerts</WF><RS><R stem="aufwaerts" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="136" ln="0"><WF>aus</WF><RS><R stem="aus" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="137" ln="0"><WF>ausgangs</WF><RS><R stem="ausgangs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="138" ln="0"><WF>ausgenommen</WF><RS><R stem="ausnehm" pos="V" freq="1" ln="0"/><R stem="ausgenommen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="139" ln="0"><WF>ausgerechnet</WF><RS><R stem="ausgerechnet" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="140" ln="0" doubles="T"><WF>ausschliesslich</WF><RS><R stem="ausschliesslich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="141" ln="0" doubles="T"><WF>ausser</WF><RS><R stem="ausser" pos="SUBORD" freq="1" ln="0"/><R stem="ausser" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="142" ln="0" doubles="T"><WF>ausserhalb</WF><RS><R stem="ausserhalb" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="143" ln="0" doubles="T"><WF>ausserdem</WF><RS><R stem="ausserdem" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="144" ln="0" doubles="T"><WF>aussen</WF><RS><R stem="aussen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="145" ln="0"><WF>ausweislich</WF><RS><R stem="ausweislich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="146" ln="0" umlaut="T"><WF>auswaerts</WF><RS><R stem="auswaerts" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="147" ln="0"><WF>auseinander</WF><RS><R stem="auseinander" pos="ADV" freq="1" ln="0"/><R stem="auseinander" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="148" ln="0"><WF>ausnahmsweise</WF><RS><R stem="ausnahmsweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="149" ln="0"><WF>auch</WF><RS><R stem="auch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="150" ln="0"><WF>allemal</WF><RS><R stem="allemal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="151" ln="0"><WF>allenfalls</WF><RS><R stem="allenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="152" ln="0"><WF>allenthalben</WF><RS><R stem="allenthalben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="153" ln="0"><WF>allerdings</WF><RS><R stem="allerdings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="154" ln="0"><WF>allerhand</WF><RS><R stem="allerhand" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="155" ln="0"><WF>allezeit</WF><RS><R stem="allezeit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="156" ln="0"><WF>allein</WF><RS><R stem="allein" pos="COORD" freq="1" ln="0"/><R stem="allein" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="157" ln="0"><WF>alles-oder-nichts</WF><RS><R stem="alles-oder-nichts" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="158" ln="0"><WF>allseits</WF><RS><R stem="allseits" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="159" ln="0"><WF>alltags</WF><RS><R stem="alltags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="160" ln="0"><WF>allzu</WF><RS><R stem="allzu" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="161" ln="0"><WF>als</WF><RS><R stem="als" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="162" ln="0"><WF>alsbald</WF><RS><R stem="alsbald" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="163" ln="0"><WF>also</WF><RS><R stem="also" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="164" ln="0"><WF>alsdann</WF><RS><R stem="alsdann" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="165" ln="0"><WF>ach</WF><RS><R stem="ach" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="166" ln="0"><WF>aha</WF><RS><R stem="aha" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="167" ln="0"><WF>bar</WF><RS><R stem="bar" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="168" ln="0"><WF>bald</WF><RS><R stem="bald" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="169" ln="0"><WF>behufs</WF><RS><R stem="behufs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="170" ln="0"><WF>bei</WF><RS><R stem="bei" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="171" ln="0"><WF>beiderseits</WF><RS><R stem="beiderseits" pos="ADV" freq="1" ln="0"/><R stem="beiderseits" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="172" ln="0"><WF>beim</WF><RS><R stem="beim" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="173" ln="0"><WF>beieinander</WF><RS><R stem="beieinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="174" ln="0"><WF>beisammen</WF><RS><R stem="beisammen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="175" ln="0"><WF>beiseite</WF><RS><R stem="beiseite" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="176" ln="0"><WF>beispielhaft</WF><RS><R stem="beispielhaft" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="177" ln="0"><WF>beispielsweise</WF><RS><R stem="beispielsweise" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="178" ln="0"><WF>beizeiten</WF><RS><R stem="beizeiten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="179" ln="0"><WF>beinahe</WF><RS><R stem="beinahe" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="180" ln="0"><WF>betreffend</WF><RS><R stem="betreff" pos="V" freq="1" ln="0"/><R stem="betreffend" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="181" ln="0"><WF>betreffs</WF><RS><R stem="betreffs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="182" ln="0" umlaut="T"><WF>bezueglich</WF><RS><R stem="bezueglich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="183" ln="0"><WF>beziehungsweise</WF><RS><R stem="beziehungsweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="184" ln="0"><WF>bereit</WF><RS><R stem="bereit" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="185" ln="0"><WF>bereits</WF><RS><R stem="bereits" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="186" ln="0"><WF>bestehen</WF><RS><R stem="besteh" pos="V" freq="1" ln="0"/><R stem="bestehen" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="187" ln="0"><WF>bestimmt</WF><RS><R stem="bestimm" pos="V" freq="1" ln="0"/><R stem="bestimm" pos="V" freq="1" ln="0"/><R stem="bestimmt" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="188" ln="0"><WF>besonders</WF><RS><R stem="besonders" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="189" ln="0"><WF>bevor</WF><RS><R stem="bevor" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="190" ln="0"><WF>binnen</WF><RS><R stem="binnen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="191" ln="0"><WF>bis</WF><RS><R stem="bis" pos="SUBORD" freq="1" ln="0"/><R stem="bis" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="192" ln="0"><WF>bisher</WF><RS><R stem="bisher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="193" ln="0"><WF>bislang</WF><RS><R stem="bislang" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="194" ln="0"><WF>bisweilen</WF><RS><R stem="bisweilen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="195" ln="0"><WF>blindlings</WF><RS><R stem="blindlings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="196" ln="0" doubles="T"><WF>bloss</WF><RS><R stem="bloss" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="197" ln="0"><WF>bravo</WF><RS><R stem="bravo" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="198" ln="0"><WF>bzw</WF><RS><R stem="bzw" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="199" ln="0"><WF>contra</WF><RS><R stem="contra" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="200" ln="0"><WF>kontra</WF><RS><R stem="kontra" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="201" ln="0" umlaut="T"><WF>kopfueber</WF><RS><R stem="kopfueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="202" ln="0"><WF>kraft</WF><RS><R stem="kraft" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="203" ln="0"><WF>kurz</WF><RS><R stem="kurz" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="204" ln="0"><WF>kurzerhand</WF><RS><R stem="kurzerhand" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="205" ln="0" umlaut="T"><WF>kuerzlich</WF><RS><R stem="kuerzlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="206" ln="0"><WF>kaum</WF><RS><R stem="kaum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="207" ln="0"><WF>keinesfalls</WF><RS><R stem="keinesfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="208" ln="0"><WF>keineswegs</WF><RS><R stem="keineswegs" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="209" ln="0"><WF>einbegriffen</WF><RS><R stem="einbegriffen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="210" ln="0"><WF>eingangs</WF><RS><R stem="eingangs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="211" ln="0"><WF>eingedenk</WF><RS><R stem="eingedenk" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="212" ln="0"><WF>eingeschlossen</WF><RS><R stem="einschliess" pos="V" freq="1" ln="0"/><R stem="eingeschlossen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="213" ln="0"><WF>einschliesslich</WF><RS><R stem="einschliesslich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="214" ln="0"><WF>einst</WF><RS><R stem="einst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="215" ln="0"><WF>einstmals</WF><RS><R stem="einstmals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="216" ln="0"><WF>einstweilen</WF><RS><R stem="einstweilen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="217" ln="0"><WF>einerseits</WF><RS><R stem="einerseits" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="218" ln="0" doubles="T"><WF>einigermassen</WF><RS><R stem="einigermassen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="219" ln="0"><WF>einmal</WF><RS><R stem="einmal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="220" ln="0"><WF>einander</WF><RS><R stem="einander" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="221" ln="0"><WF>eigentlich</WF><RS><R stem="eigentlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="222" ln="0"><WF>eilends</WF><RS><R stem="eilends" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="223" ln="0"><WF>entgegen</WF><RS><R stem="entgegen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="224" ln="0"><WF>entlang</WF><RS><R stem="entlang" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="225" ln="0"><WF>entsprechend</WF><RS><R stem="entsprechend" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="226" ln="0"><WF>entweder</WF><RS><R stem="entweder" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="227" ln="0"><WF>endlich</WF><RS><R stem="endlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="228" ln="0"><WF>exclusive</WF><RS><R stem="exclusive" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="229" ln="0"><WF>exklusive</WF><RS><R stem="exklusive" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="230" ln="0"><WF>er</WF><RS><R stem="er" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="231" ln="0"><WF>erforderlichenfalls</WF><RS><R stem="erforderlichenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="232" ln="0"><WF>erst</WF><RS><R stem="erst" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="233" ln="0"><WF>erstens</WF><RS><R stem="erstens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="234" ln="0"><WF>es</WF><RS><R stem="es" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="235" ln="0"><WF>euch</WF><RS><R stem="euch" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="236" ln="0"><WF>euer</WF><RS><R stem="euer" pos="POSSPRON" freq="1" ln="0"/><R stem="euer" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="237" ln="0"><WF>etwa</WF><RS><R stem="etwa" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="238" ln="0"><WF>etwas</WF><RS><R stem="etwas" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="239" ln="0"><WF>eben</WF><RS><R stem="eben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="240" ln="0"><WF>ebenfalls</WF><RS><R stem="ebenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="241" ln="0"><WF>ebenso</WF><RS><R stem="ebenso" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="242" ln="0"><WF>ebensowenig</WF><RS><R stem="ebensowenig" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="243" ln="0"><WF>eh</WF><RS><R stem="eh" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="244" ln="0"><WF>ehe</WF><RS><R stem="ehe" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="245" ln="0"><WF>ehedem</WF><RS><R stem="ehedem" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="246" ln="0"><WF>ehemals</WF><RS><R stem="ehemals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="247" ln="0"><WF>eher</WF><RS><R stem="eher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="248" ln="0"><WF>empor</WF><RS><R stem="empor" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="249" ln="0" umlaut="T"><WF>eventuell</WF><RS><R stem="eventuell" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="250" ln="0"><WF>fern</WF><RS><R stem="fern" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="251" ln="0"><WF>fernab</WF><RS><R stem="fernab" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="252" ln="0"><WF>ferne</WF><RS><R stem="ferne" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="253" ln="0"><WF>ferner</WF><RS><R stem="ferner" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="254" ln="0"><WF>fest</WF><RS><R stem="fest" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="255" ln="0"><WF>feiertags</WF><RS><R stem="feiertags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="256" ln="0"><WF>frei</WF><RS><R stem="frei" pos="V" freq="1" ln="0"/><R stem="frei" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="257" ln="0"><WF>freilich</WF><RS><R stem="freilich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="258" ln="0"><WF>freitags</WF><RS><R stem="freitags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="259" ln="0" umlaut="T"><WF>fruehestens</WF><RS><R stem="fruehestens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="260" ln="0" umlaut="T"><WF>fuer</WF><RS><R stem="fuer" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="261" ln="0" umlaut="T"><WF>fuers</WF><RS><R stem="fuers" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="262" ln="0" umlaut="T"><WF>fuereinander</WF><RS><R stem="fuereinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="263" ln="0"><WF>fort</WF><RS><R stem="fort" pos="ADV" freq="1" ln="0"/><R stem="fort" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="264" ln="0"><WF>fortan</WF><RS><R stem="fortan" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="265" ln="0"><WF>folglich</WF><RS><R stem="folglich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="266" ln="0"><WF>fast</WF><RS><R stem="fast" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="267" ln="0"><WF>falls</WF><RS><R stem="falls" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="268" ln="0"><WF>gegen</WF><RS><R stem="gegen" pos="ADV" freq="1" ln="0"/><R stem="gegen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="269" ln="0" umlaut="T"><WF>gegenueber</WF><RS><R stem="gegenueber" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="270" ln="0"><WF>gegeneinander</WF><RS><R stem="gegeneinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="271" ln="0"><WF>gegebenenfalls</WF><RS><R stem="gegebenenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="272" ln="0"><WF>gelegentlich</WF><RS><R stem="gelegentlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="273" ln="0" umlaut="T" doubles="T"><WF>gemaess</WF><RS><R stem="gemaess" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="274" ln="0"><WF>getrennt</WF><RS><R stem="trenn" pos="V" freq="1" ln="0"/><R stem="getrennt" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="275" ln="0"><WF>genau</WF><RS><R stem="genau" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="276" ln="0"><WF>genaugenommen</WF><RS><R stem="genaugenommen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="277" ln="0"><WF>genauso</WF><RS><R stem="genauso" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="278" ln="0"><WF>genausowie</WF><RS><R stem="genausowie" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="279" ln="0"><WF>genug</WF><RS><R stem="genug" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="280" ln="0"><WF>gerade</WF><RS><R stem="gerade" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="281" ln="0"><WF>geradeaus</WF><RS><R stem="geradeaus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="282" ln="0"><WF>geradeheraus</WF><RS><R stem="geradeheraus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="283" ln="0"><WF>geradezu</WF><RS><R stem="geradezu" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="284" ln="0"><WF>gern</WF><RS><R stem="gern" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="285" ln="0"><WF>gerne</WF><RS><R stem="gerne" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="286" ln="0"><WF>gestern</WF><RS><R stem="gestern" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="287" ln="0" doubles="T"><WF>gewiss</WF><RS><R stem="gewiss" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="288" ln="0" doubles="T"><WF>gewissermassen</WF><RS><R stem="gewissermassen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="289" ln="0"><WF>gleich</WF><RS><R stem="gleich" pos="ADV" freq="1" ln="0"/><R stem="gleich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="290" ln="0"><WF>gleichfalls</WF><RS><R stem="gleichfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="291" ln="0"><WF>gleichsam</WF><RS><R stem="gleichsam" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="292" ln="0"><WF>gleichwohl</WF><RS><R stem="gleichwohl" pos="COORD" freq="1" ln="0"/><R stem="gleichwohl" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="293" ln="0"><WF>glattweg</WF><RS><R stem="glattweg" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="294" ln="0" umlaut="T"><WF>gluecklicherweise</WF><RS><R stem="gluecklicherweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="295" ln="0"><WF>gar</WF><RS><R stem="gar" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="296" ln="0"><WF>garnicht</WF><RS><R stem="garnicht" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="297" ln="0"><WF>garzu</WF><RS><R stem="garzu" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="298" ln="0"><WF>ganz</WF><RS><R stem="ganz" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="299" ln="0" umlaut="T" doubles="T"><WF>groesstenteils</WF><RS><R stem="groesstenteils" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="300" ln="0"><WF>halber</WF><RS><R stem="halber" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="301" ln="0"><WF>halbwegs</WF><RS><R stem="halbwegs" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="302" ln="0"><WF>halt</WF><RS><R stem="halt" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="303" ln="0"><WF>hallo</WF><RS><R stem="hallo" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="304" ln="0"><WF>hin</WF><RS><R stem="hin" pos="ADV" freq="1" ln="0"/><R stem="hin" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="305" ln="0"><WF>hinsichtlich</WF><RS><R stem="hinsichtlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="306" ln="0"><WF>hinter</WF><RS><R stem="hinter" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="307" ln="0"><WF>hinters</WF><RS><R stem="hinters" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="308" ln="0"><WF>hinterm</WF><RS><R stem="hinterm" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="309" ln="0"><WF>hintereinander</WF><RS><R stem="hintereinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="310" ln="0"><WF>hinterher</WF><RS><R stem="hinterher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="311" ln="0" umlaut="T"><WF>hinterruecks</WF><RS><R stem="hinterruecks" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="312" ln="0"><WF>hinten</WF><RS><R stem="hinten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="313" ln="0"><WF>hinzu</WF><RS><R stem="hinzu" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="314" ln="0"><WF>hinab</WF><RS><R stem="hinab" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="315" ln="0"><WF>hinauf</WF><RS><R stem="hinauf" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="316" ln="0"><WF>hinaus</WF><RS><R stem="hinaus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="317" ln="0"><WF>hindurch</WF><RS><R stem="hindurch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="318" ln="0"><WF>hinein</WF><RS><R stem="hinein" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="319" ln="0"><WF>hingegen</WF><RS><R stem="hingegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="320" ln="0" umlaut="T"><WF>hinueber</WF><RS><R stem="hinueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="321" ln="0"><WF>hinunter</WF><RS><R stem="hinunter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="322" ln="0"><WF>hinweg</WF><RS><R stem="hinweg" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="323" ln="0"><WF>hinwiederum</WF><RS><R stem="hinwiederum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="324" ln="0"><WF>hier</WF><RS><R stem="hier" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="325" ln="0"><WF>hieran</WF><RS><R stem="hieran" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="326" ln="0"><WF>hierauf</WF><RS><R stem="hierauf" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="327" ln="0"><WF>hieraus</WF><RS><R stem="hieraus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="328" ln="0"><WF>hierbei</WF><RS><R stem="hierbei" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="329" ln="0"><WF>hierdurch</WF><RS><R stem="hierdurch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="330" ln="0" umlaut="T"><WF>hierfuer</WF><RS><R stem="hierfuer" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="331" ln="0"><WF>hiergegen</WF><RS><R stem="hiergegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="332" ln="0"><WF>hierher</WF><RS><R stem="hierher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="333" ln="0"><WF>hierhin</WF><RS><R stem="hierhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="334" ln="0"><WF>hierhinter</WF><RS><R stem="hierhinter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="335" ln="0"><WF>hierin</WF><RS><R stem="hierin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="336" ln="0"><WF>hiermit</WF><RS><R stem="hiermit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="337" ln="0"><WF>hiernach</WF><RS><R stem="hiernach" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="338" ln="0" umlaut="T"><WF>hierueber</WF><RS><R stem="hierueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="339" ln="0"><WF>hierum</WF><RS><R stem="hierum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="340" ln="0"><WF>hierunter</WF><RS><R stem="hierunter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="341" ln="0"><WF>hiervon</WF><RS><R stem="hiervon" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="342" ln="0"><WF>hiervor</WF><RS><R stem="hiervor" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="343" ln="0"><WF>hierzu</WF><RS><R stem="hierzu" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="344" ln="0"><WF>hierzwischen</WF><RS><R stem="hierzwischen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="345" ln="0"><WF>her</WF><RS><R stem="her" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="346" ln="0"><WF>herab</WF><RS><R stem="herab" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="347" ln="0"><WF>heran</WF><RS><R stem="heran" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="348" ln="0"><WF>herauf</WF><RS><R stem="herauf" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="349" ln="0"><WF>heraus</WF><RS><R stem="heraus" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="350" ln="0"><WF>herbei</WF><RS><R stem="herbei" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="351" ln="0"><WF>herein</WF><RS><R stem="herein" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="352" ln="0"><WF>herum</WF><RS><R stem="herum" pos="ADV" freq="1" ln="0"/><R stem="herum" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="353" ln="0"><WF>herunter</WF><RS><R stem="herunter" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="354" ln="0"><WF>hervor</WF><RS><R stem="hervor" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="355" ln="0"><WF>hernach</WF><RS><R stem="hernach" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="356" ln="0"><WF>heut</WF><RS><R stem="heut" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="357" ln="0"><WF>heute</WF><RS><R stem="heu" pos="V" freq="1" ln="0"/><R stem="heute" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="358" ln="0"><WF>heutigentags</WF><RS><R stem="heutigentags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="359" ln="0"><WF>heutzutage</WF><RS><R stem="heutzutage" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="360" ln="0" umlaut="T"><WF>hoechst</WF><RS><R stem="hoechst" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="361" ln="0" umlaut="T"><WF>hoechstens</WF><RS><R stem="hoechstens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="362" ln="0"><WF>hoffentlich</WF><RS><R stem="hoffentlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="363" ln="0"><WF>hopp</WF><RS><R stem="hopp" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="364" ln="0"><WF>im</WF><RS><R stem="im" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="365" ln="0"><WF>immer</WF><RS><R stem="immer" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="366" ln="0"><WF>immerfort</WF><RS><R stem="immerfort" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="367" ln="0"><WF>immerhin</WF><RS><R stem="immerhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="368" ln="0"><WF>immerzu</WF><RS><R stem="immerzu" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="369" ln="0"><WF>in</WF><RS><R stem="in" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="370" ln="0"><WF>infolge</WF><RS><R stem="infolge" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="371" ln="0" doubles="T"><WF>infolgedessen</WF><RS><R stem="infolgedessen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="372" ln="0"><WF>inklusive</WF><RS><R stem="inklusive" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="373" ln="0"><WF>inmitten</WF><RS><R stem="inmitten" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="374" ln="0"><WF>inne</WF><RS><R stem="inne" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="375" ln="0"><WF>innerhalb</WF><RS><R stem="innerhalb" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="376" ln="0"><WF>innen</WF><RS><R stem="innen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="377" ln="0"><WF>ins</WF><RS><R stem="ins" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="378" ln="0"><WF>insbesondere</WF><RS><R stem="insbesondere" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="379" ln="0"><WF>insgeheim</WF><RS><R stem="insgeheim" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="380" ln="0"><WF>insgesamt</WF><RS><R stem="insgesamt" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="381" ln="0"><WF>insofern</WF><RS><R stem="insofern" pos="SUBORD" freq="1" ln="0"/><R stem="insofern" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="382" ln="0"><WF>insoweit</WF><RS><R stem="insoweit" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="383" ln="0"><WF>inwiefern</WF><RS><R stem="inwiefern" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="384" ln="0"><WF>inwieweit</WF><RS><R stem="inwieweit" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="385" ln="0"><WF>ineinander</WF><RS><R stem="ineinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="386" ln="0"><WF>indes</WF><RS><R stem="indes" pos="SUBORD" freq="1" ln="0"/><R stem="indes" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="387" ln="0" doubles="T"><WF>indessen</WF><RS><R stem="indessen" pos="SUBORD" freq="1" ln="0"/><R stem="indessen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="388" ln="0"><WF>indem</WF><RS><R stem="indem" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="389" ln="0"><WF>inzwischen</WF><RS><R stem="inzwischen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="390" ln="0"><WF>ich</WF><RS><R stem="ich" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="391" ln="0"><WF>ihn</WF><RS><R stem="ihn" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="392" ln="0"><WF>ihnen</WF><RS><R stem="ihnen" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="393" ln="0"><WF>ihm</WF><RS><R stem="ihm" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="394" ln="0"><WF>ihr</WF><RS><R stem="ihr" pos="POSSPRON" freq="1" ln="0"/><R stem="ihr" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="395" ln="0"><WF>ihrer</WF><RS><R stem="ihr" pos="POSSPRON" freq="1" ln="0"/><R stem="ihrer" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="396" ln="0"><WF>ihrerseits</WF><RS><R stem="ihrerseits" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="397" ln="0"><WF>irgend</WF><RS><R stem="irgend" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="398" ln="0"><WF>irgendwie</WF><RS><R stem="irgendwie" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="399" ln="0"><WF>irgendwo</WF><RS><R stem="irgendwo" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="400" ln="0"><WF>irgendwoher</WF><RS><R stem="irgendwoher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="401" ln="0"><WF>irgendwohin</WF><RS><R stem="irgendwohin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="402" ln="0"><WF>irgendwomit</WF><RS><R stem="irgendwomit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="403" ln="0"><WF>je</WF><RS><R stem="je" pos="SUBORD" freq="1" ln="0"/><R stem="je" pos="ADV" freq="1" ln="0"/><R stem="je" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="404" ln="0"><WF>jenseits</WF><RS><R stem="jenseits" pos="ADV" freq="1" ln="0"/><R stem="jenseits" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="405" ln="0"><WF>jederzeit</WF><RS><R stem="jederzeit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="406" ln="0"><WF>jedesmal</WF><RS><R stem="jedesmal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="407" ln="0"><WF>jedenfalls</WF><RS><R stem="jedenfalls" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="408" ln="0"><WF>jedoch</WF><RS><R stem="jedoch" pos="COORD" freq="1" ln="0"/><R stem="jedoch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="409" ln="0"><WF>jemals</WF><RS><R stem="jemals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="410" ln="0"><WF>jemand</WF><RS><R stem="jemand" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="411" ln="0"><WF>jetzt</WF><RS><R stem="jetzt" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="412" ln="0"><WF>jeweils</WF><RS><R stem="jeweils" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="413" ln="0"><WF>ja</WF><RS><R stem="ja" pos="COORD" freq="1" ln="0"/><R stem="ja" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="414" ln="0" umlaut="T"><WF>jaehlings</WF><RS><R stem="jaehlings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="415" ln="0"><WF>jaja</WF><RS><R stem="jaja" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="416" ln="0" umlaut="T"><WF>laengs</WF><RS><R stem="laengs" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="417" ln="0" umlaut="T" doubles="T"><WF>laengsseits</WF><RS><R stem="laengsseits" pos="ADV" freq="1" ln="0"/><R stem="laengsseits" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="418" ln="0" umlaut="T"><WF>laengst</WF><RS><R stem="laengst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="419" ln="0"><WF>laut</WF><RS><R stem="laut" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="420" ln="0"><WF>lange</WF><RS><R stem="lang" pos="V" freq="1" ln="0"/><R stem="lange" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="421" ln="0"><WF>links</WF><RS><R stem="links" pos="ADV" freq="1" ln="0"/><R stem="links" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="422" ln="0"><WF>lieber</WF><RS><R stem="lieber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="423" ln="0"><WF>leider</WF><RS><R stem="leider" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="424" ln="0"><WF>letztens</WF><RS><R stem="letztens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="425" ln="0"><WF>lediglich</WF><RS><R stem="lediglich" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="426" ln="0"><WF>man</WF><RS><R stem="man" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="427" ln="0"><WF>mangels</WF><RS><R stem="mangels" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="428" ln="0"><WF>manchmal</WF><RS><R stem="manchmal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="429" ln="0"><WF>mal</WF><RS><R stem="mal" pos="V" freq="1" ln="0"/><R stem="mal" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="430" ln="0"><WF>minus</WF><RS><R stem="minus" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="431" ln="0"><WF>mindestens</WF><RS><R stem="mindestens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="432" ln="0"><WF>mit</WF><RS><R stem="mit" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="433" ln="0"><WF>mitgerechnet</WF><RS><R stem="mitgerechnet" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="434" ln="0"><WF>mithilfe</WF><RS><R stem="mithilfe" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="435" ln="0"><WF>mithin</WF><RS><R stem="mithin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="436" ln="0"><WF>mitsamt</WF><RS><R stem="mitsamt" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="437" ln="0"><WF>mittels</WF><RS><R stem="mittels" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="438" ln="0"><WF>mitten</WF><RS><R stem="mitten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="439" ln="0"><WF>mittendrin</WF><RS><R stem="mittendrin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="440" ln="0"><WF>mittags</WF><RS><R stem="mittags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="441" ln="0"><WF>mittwochs</WF><RS><R stem="mittwochs" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="442" ln="0"><WF>miteinander</WF><RS><R stem="miteinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="443" ln="0"><WF>mitunter</WF><RS><R stem="mitunter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="444" ln="0"><WF>mich</WF><RS><R stem="mich" pos="REFPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="445" ln="0"><WF>mir</WF><RS><R stem="mir" pos="REFPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="446" ln="0"><WF>mei</WF><RS><R stem="mei" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="447" ln="0"><WF>meiner</WF><RS><R stem="mein" pos="POSSPRON" freq="1" ln="0"/><R stem="meiner" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="448" ln="0"><WF>meinetwegen</WF><RS><R stem="meinetwegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="449" ln="0"><WF>meist</WF><RS><R stem="meist" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="450" ln="0"><WF>meistens</WF><RS><R stem="meistens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="451" ln="0"><WF>mehr</WF><RS><R stem="mehr" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="452" ln="0"><WF>mehrmals</WF><RS><R stem="mehrmals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="453" ln="0" umlaut="T"><WF>moeglicherweise</WF><RS><R stem="moeglicherweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="454" ln="0"><WF>montags</WF><RS><R stem="montags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="455" ln="0"><WF>morgen</WF><RS><R stem="morgen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="456" ln="0"><WF>morgens</WF><RS><R stem="morgens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="457" ln="0"><WF>na</WF><RS><R stem="na" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="458" ln="0"><WF>nach</WF><RS><R stem="nach" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="459" ln="0"><WF>nachgerade</WF><RS><R stem="nachgerade" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="460" ln="0"><WF>nachher</WF><RS><R stem="nachher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="461" ln="0"><WF>nachmittag</WF><RS><R stem="nachmittag" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="462" ln="0"><WF>nachmittags</WF><RS><R stem="nachmittags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="463" ln="0"><WF>nachts</WF><RS><R stem="nachts" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="464" ln="0" umlaut="T"><WF>nachtsueber</WF><RS><R stem="nachtsueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="465" ln="0"><WF>nachdem</WF><RS><R stem="nachdem" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="466" ln="0" umlaut="T"><WF>naechst</WF><RS><R stem="naechst" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="467" ln="0" umlaut="T"><WF>naechstens</WF><RS><R stem="naechstens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="468" ln="0" umlaut="T"><WF>naemlich</WF><RS><R stem="naemlich" pos="COORD" freq="1" ln="0"/><R stem="naemlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="469" ln="0"><WF>nahe</WF><RS><R stem="nah" pos="V" freq="1" ln="0"/><R stem="nahe" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="470" ln="0"><WF>nahezu</WF><RS><R stem="nahezu" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="471" ln="0"><WF>namens</WF><RS><R stem="namens" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="472" ln="0"><WF>namentlich</WF><RS><R stem="namentlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="473" ln="0"><WF>neben</WF><RS><R stem="neben" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="474" ln="0"><WF>nebeneinander</WF><RS><R stem="nebeneinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="475" ln="0"><WF>nebenan</WF><RS><R stem="nebenan" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="476" ln="0"><WF>nebenbei</WF><RS><R stem="nebenbei" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="477" ln="0"><WF>nebenher</WF><RS><R stem="nebenher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="478" ln="0"><WF>nebst</WF><RS><R stem="nebst" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="479" ln="0"><WF>neulich</WF><RS><R stem="neulich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="480" ln="0"><WF>nein</WF><RS><R stem="nein" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="481" ln="0"><WF>neinnein</WF><RS><R stem="neinnein" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="482" ln="0" umlaut="T"><WF>noerdlich</WF><RS><R stem="noerdlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="483" ln="0" umlaut="T"><WF>noetigenfalls</WF><RS><R stem="noetigenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="484" ln="0"><WF>noch</WF><RS><R stem="noch" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="485" ln="0"><WF>nochmals</WF><RS><R stem="nochmals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="486" ln="0"><WF>notfalls</WF><RS><R stem="notfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="487" ln="0"><WF>nicht</WF><RS><R stem="nicht" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="488" ln="0"><WF>nichts</WF><RS><R stem="nichts" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="489" ln="0"><WF>nichtsdestoweniger</WF><RS><R stem="nichtsdestoweniger" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="490" ln="0"><WF>nie</WF><RS><R stem="nie" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="491" ln="0"><WF>nieder</WF><RS><R stem="nieder" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="492" ln="0"><WF>niemals</WF><RS><R stem="niemals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="493" ln="0"><WF>niemand</WF><RS><R stem="niemand" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="494" ln="0"><WF>nimmer</WF><RS><R stem="nimmer" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="495" ln="0"><WF>nimmermehr</WF><RS><R stem="nimmermehr" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="496" ln="0"><WF>nirgends</WF><RS><R stem="nirgends" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="497" ln="0"><WF>nirgendwo</WF><RS><R stem="nirgendwo" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="498" ln="0"><WF>nun</WF><RS><R stem="nun" pos="COORD" freq="1" ln="0"/><R stem="nun" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="499" ln="0"><WF>nunmehr</WF><RS><R stem="nunmehr" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="500" ln="0"><WF>nur</WF><RS><R stem="nur" pos="COORD" freq="1" ln="0"/><R stem="nur" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="501" ln="0"><WF>ob</WF><RS><R stem="ob" pos="SUBORD" freq="1" ln="0"/><R stem="ob" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="502" ln="0"><WF>oberhalb</WF><RS><R stem="oberhalb" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="503" ln="0"><WF>oben</WF><RS><R stem="oben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="504" ln="0"><WF>obenan</WF><RS><R stem="obenan" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="505" ln="0"><WF>obenauf</WF><RS><R stem="obenauf" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="506" ln="0"><WF>obenhin</WF><RS><R stem="obenhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="507" ln="0"><WF>obgleich</WF><RS><R stem="obgleich" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="508" ln="0"><WF>obschon</WF><RS><R stem="obschon" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="509" ln="0"><WF>obwohl</WF><RS><R stem="obwohl" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="510" ln="0"><WF>obzwar</WF><RS><R stem="obzwar" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="511" ln="0" umlaut="T"><WF>oestlich</WF><RS><R stem="oestlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="512" ln="0" umlaut="T"><WF>oefter</WF><RS><R stem="oefter" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="513" ln="0" umlaut="T"><WF>oefters</WF><RS><R stem="oefters" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="514" ln="0"><WF>oh</WF><RS><R stem="oh" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="515" ln="0"><WF>ohne</WF><RS><R stem="ohne" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="516" ln="0"><WF>ohnedies</WF><RS><R stem="ohnedies" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="517" ln="0"><WF>ohnehin</WF><RS><R stem="ohnehin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="518" ln="0"><WF>oft</WF><RS><R stem="oft" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="519" ln="0"><WF>oftmals</WF><RS><R stem="oftmals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="520" ln="0"><WF>oder</WF><RS><R stem="oder" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="521" ln="0"><WF>per</WF><RS><R stem="per" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="522" ln="0"><WF>plus</WF><RS><R stem="plus" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="523" ln="0"><WF>pro</WF><RS><R stem="pro" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="524" ln="0"><WF>punkto</WF><RS><R stem="punkto" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="525" ln="0"><WF>recht</WF><RS><R stem="rech" pos="V" freq="1" ln="0"/><R stem="recht" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="526" ln="0"><WF>rechts</WF><RS><R stem="rechts" pos="ADV" freq="1" ln="0"/><R stem="rechts" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="527" ln="0"><WF>respektive</WF><RS><R stem="respektive" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="528" ln="0" umlaut="T"><WF>ruecksichtlich</WF><RS><R stem="ruecksichtlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="529" ln="0" umlaut="T"><WF>ruecklings</WF><RS><R stem="ruecklings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="530" ln="0" umlaut="T"><WF>rueckwaerts</WF><RS><R stem="rueckwaerts" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="531" ln="0"><WF>rund</WF><RS><R stem="rund" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="532" ln="0"><WF>rundheraus</WF><RS><R stem="rundheraus" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="533" ln="0"><WF>rundweg</WF><RS><R stem="rundweg" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="534" ln="0"><WF>rum</WF><RS><R stem="rum" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="535" ln="0"><WF>rings</WF><RS><R stem="rings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="536" ln="0"><WF>ringsherum</WF><RS><R stem="ringsherum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="537" ln="0"><WF>ringsum</WF><RS><R stem="ringsum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="538" ln="0"><WF>samt</WF><RS><R stem="sam" pos="V" freq="1" ln="0"/><R stem="samt" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="539" ln="0"><WF>samstags</WF><RS><R stem="samstags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="540" ln="0"><WF>sattsam</WF><RS><R stem="sattsam" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="541" ln="0"><WF>seit</WF><RS><R stem="seit" pos="SUBORD" freq="1" ln="0"/><R stem="seit" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="542" ln="0"><WF>seitens</WF><RS><R stem="seitens" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="543" ln="0"><WF>seitlich</WF><RS><R stem="seitlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="544" ln="0" umlaut="T"><WF>seitwaerts</WF><RS><R stem="seitwaerts" pos="ADV" freq="1" ln="0"/><R stem="seitwaerts" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="545" ln="0"><WF>seitdem</WF><RS><R stem="seitdem" pos="SUBORD" freq="1" ln="0"/><R stem="seitdem" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="546" ln="0"><WF>seither</WF><RS><R stem="seither" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="547" ln="0"><WF>seiner</WF><RS><R stem="sein" pos="POSSPRON" freq="1" ln="0"/><R stem="seiner" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="548" ln="0"><WF>seinerseits</WF><RS><R stem="seinerseits" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="549" ln="0"><WF>seinerzeit</WF><RS><R stem="seinerzeit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="550" ln="0"><WF>seinetwegen</WF><RS><R stem="seinetwegen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="551" ln="0"><WF>sehr</WF><RS><R stem="sehr" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="552" ln="0"><WF>selbst</WF><RS><R stem="selbst" pos="PART" freq="1" ln="0"/><R stem="selbst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="553" ln="0"><WF>selber</WF><RS><R stem="selber" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="554" ln="0"><WF>selten</WF><RS><R stem="selten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="555" ln="0"><WF>statt</WF><RS><R stem="statt" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="556" ln="0"><WF>still</WF><RS><R stem="still" pos="V" freq="1" ln="0"/><R stem="still" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="557" ln="0"><WF>stets</WF><RS><R stem="stets" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="558" ln="0"><WF>strenggenommen</WF><RS><R stem="strenggenommen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="559" ln="0" umlaut="T"><WF>suedlich</WF><RS><R stem="suedlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="560" ln="0"><WF>sie</WF><RS><R stem="sie" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="561" ln="0"><WF>sich</WF><RS><R stem="sich" pos="REFPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="562" ln="0"><WF>sicher</WF><RS><R stem="sicher" pos="ADV" freq="1" ln="0"/><R stem="sicher" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="563" ln="0"><WF>sicherlich</WF><RS><R stem="sicherlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="564" ln="0" umlaut="T"><WF>schaetzungsweise</WF><RS><R stem="schaetzungsweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="565" ln="0"><WF>schlechterdings</WF><RS><R stem="schlechterdings" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="566" ln="0"><WF>schlechthin</WF><RS><R stem="schlechthin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="567" ln="0"><WF>schliesslich</WF><RS><R stem="schliesslich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="568" ln="0"><WF>schlimmstenfalls</WF><RS><R stem="schlimmstenfalls" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="569" ln="0"><WF>schon</WF><RS><R stem="schon" pos="PART" freq="1" ln="0"/><R stem="schon" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="570" ln="0"><WF>schrittweise</WF><RS><R stem="schrittweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="571" ln="0"><WF>schwerlich</WF><RS><R stem="schwerlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="572" ln="0"><WF>so</WF><RS><R stem="so" pos="SUBORD" freq="1" ln="0"/><R stem="so" pos="PART" freq="1" ln="0"/><R stem="so" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="573" ln="0"><WF>sodann</WF><RS><R stem="sodann" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="574" ln="0"><WF>sodass</WF><RS><R stem="sodass" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="575" ln="0" umlaut="T"><WF>soeben</WF><RS><R stem="soeben" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="576" ln="0"><WF>sofort</WF><RS><R stem="sofort" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="577" ln="0"><WF>sofern</WF><RS><R stem="sofern" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="578" ln="0"><WF>sogleich</WF><RS><R stem="sogleich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="579" ln="0"><WF>sogar</WF><RS><R stem="sogar" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="580" ln="0"><WF>somit</WF><RS><R stem="somit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="581" ln="0"><WF>sonach</WF><RS><R stem="sonach" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="582" ln="0"><WF>sonnabends</WF><RS><R stem="sonnabends" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="583" ln="0"><WF>sonntags</WF><RS><R stem="sonntags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="584" ln="0"><WF>sonst</WF><RS><R stem="sonst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="585" ln="0"><WF>sondern</WF><RS><R stem="sonder" pos="V" freq="1" ln="0"/><R stem="sondern" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="586" ln="0"><WF>soweit</WF><RS><R stem="soweit" pos="SUBORD" freq="1" ln="0"/><R stem="soweit" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="587" ln="0"><WF>sowenig</WF><RS><R stem="sowenig" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="588" ln="0"><WF>sowie</WF><RS><R stem="sowie" pos="SUBORD" freq="1" ln="0"/><R stem="sowie" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="589" ln="0"><WF>sowieso</WF><RS><R stem="sowieso" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="590" ln="0"><WF>sowohl</WF><RS><R stem="sowohl" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="591" ln="0"><WF>sozusagen</WF><RS><R stem="sozusagen" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="592" ln="0"><WF>sobald</WF><RS><R stem="sobald" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="593" ln="0"><WF>solange</WF><RS><R stem="solange" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="594" ln="0"><WF>sooft</WF><RS><R stem="sooft" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="595" ln="0"><WF>soviel</WF><RS><R stem="soviel" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="596" ln="0" umlaut="T"><WF>spaetestens</WF><RS><R stem="spaetestens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="597" ln="0"><WF>treu</WF><RS><R stem="treu" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="598" ln="0"><WF>trotz</WF><RS><R stem="trotz" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="599" ln="0"><WF>trotzdem</WF><RS><R stem="trotzdem" pos="SUBORD" freq="1" ln="0"/><R stem="trotzdem" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="600" ln="0" umlaut="T"><WF>tagsueber</WF><RS><R stem="tagsueber" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="601" ln="0"><WF>teils</WF><RS><R stem="teils" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="602" ln="0"><WF>teilweise</WF><RS><R stem="teilweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="603" ln="0" umlaut="T"><WF>ueber</WF><RS><R stem="ueber" pos="ADV" freq="1" ln="0"/><R stem="ueber" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="604" ln="0" umlaut="T"><WF>ueberm</WF><RS><R stem="ueberm" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="605" ln="0" umlaut="T"><WF>uebermorgen</WF><RS><R stem="uebermorgen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="606" ln="0" umlaut="T"><WF>uebers</WF><RS><R stem="uebers" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="607" ln="0" umlaut="T"><WF>ueberein</WF><RS><R stem="ueberein" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="608" ln="0" umlaut="T"><WF>uebereinander</WF><RS><R stem="uebereinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="609" ln="0" umlaut="T"><WF>ueberall</WF><RS><R stem="ueberall" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="610" ln="0" umlaut="T"><WF>ueberallher</WF><RS><R stem="ueberallher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="611" ln="0" umlaut="T"><WF>ueberallhin</WF><RS><R stem="ueberallhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="612" ln="0" umlaut="T"><WF>ueberaus</WF><RS><R stem="ueberaus" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="613" ln="0" umlaut="T"><WF>ueberdies</WF><RS><R stem="ueberdies" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="614" ln="0" umlaut="T"><WF>ueberwiegend</WF><RS><R stem="ueberwiegend" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="615" ln="0" umlaut="T"><WF>ueberhaupt</WF><RS><R stem="ueberhaupt" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="616" ln="0" umlaut="T"><WF>uebrigens</WF><RS><R stem="uebrigens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="617" ln="0"><WF>um</WF><RS><R stem="um" pos="ADV" freq="1" ln="0"/><R stem="um" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="618" ln="0"><WF>ums</WF><RS><R stem="ums" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="619" ln="0"><WF>umsonst</WF><RS><R stem="umsonst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="620" ln="0"><WF>umsomehr</WF><RS><R stem="umsomehr" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="621" ln="0"><WF>umeinander</WF><RS><R stem="umeinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="622" ln="0"><WF>umher</WF><RS><R stem="umher" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="623" ln="0"><WF>unbeschadet</WF><RS><R stem="unbeschadet" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="624" ln="0"><WF>unerachtet</WF><RS><R stem="unerachtet" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="625" ln="0"><WF>unfern</WF><RS><R stem="unfern" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="626" ln="0"><WF>ungeachtet</WF><RS><R stem="ungeachtet" pos="SUBORD" freq="1" ln="0"/><R stem="ungeachtet" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="627" ln="0"><WF>ungern</WF><RS><R stem="ungern" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="628" ln="0"><WF>ungleich</WF><RS><R stem="ungleich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="629" ln="0" umlaut="T"><WF>ungluecklicherweise</WF><RS><R stem="ungluecklicherweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="630" ln="0"><WF>unter</WF><RS><R stem="unter" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="631" ln="0"><WF>unterm</WF><RS><R stem="unterm" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="632" ln="0"><WF>unters</WF><RS><R stem="unters" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="633" ln="0"><WF>unterhalb</WF><RS><R stem="unterhalb" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="634" ln="0"><WF>untereinander</WF><RS><R stem="untereinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="635" ln="0"><WF>unterderhand</WF><RS><R stem="unterderhand" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="636" ln="0" doubles="T"><WF>unterdessen</WF><RS><R stem="unterdessen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="637" ln="0"><WF>unterwegs</WF><RS><R stem="unterwegs" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="638" ln="0"><WF>unten</WF><RS><R stem="unten" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="639" ln="0"><WF>unweit</WF><RS><R stem="unweit" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="640" ln="0"><WF>uns</WF><RS><R stem="uns" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="641" ln="0"><WF>unser</WF><RS><R stem="unser" pos="POSSPRON" freq="1" ln="0"/><R stem="unser" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="642" ln="0" umlaut="T"><WF>unlaengst</WF><RS><R stem="unlaengst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="643" ln="0"><WF>ununterbrochen</WF><RS><R stem="ununterbrochen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="644" ln="0"><WF>unverrichteterdinge</WF><RS><R stem="unverrichteterdinge" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="645" ln="0"><WF>unversehens</WF><RS><R stem="unversehens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="646" ln="0"><WF>und</WF><RS><R stem="und" pos="COORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="647" ln="0"><WF>vermittels</WF><RS><R stem="vermittels" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="648" ln="0"><WF>vermittelst</WF><RS><R stem="vermittelst" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="649" ln="0" umlaut="T"><WF>vermoege</WF><RS><R stem="vermoege" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="650" ln="0"><WF>versus</WF><RS><R stem="versus" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="651" ln="0"><WF>vergebens</WF><RS><R stem="vergebens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="652" ln="0"><WF>via</WF><RS><R stem="via" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="653" ln="0"><WF>vis-a-vis</WF><RS><R stem="vis-a-vis" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="654" ln="0"><WF>viel</WF><RS><R stem="viel" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="655" ln="0"><WF>vielleicht</WF><RS><R stem="vielleicht" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="656" ln="0"><WF>vielmals</WF><RS><R stem="vielmals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="657" ln="0"><WF>vielmehr</WF><RS><R stem="vielmehr" pos="COORD" freq="1" ln="0"/><R stem="vielmehr" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="658" ln="0"><WF>vom</WF><RS><R stem="vom" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="659" ln="0"><WF>von</WF><RS><R stem="von" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="660" ln="0"><WF>voneinander</WF><RS><R stem="voneinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="661" ln="0"><WF>vor</WF><RS><R stem="vor" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="662" ln="0"><WF>vorm</WF><RS><R stem="vorm" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="663" ln="0"><WF>vormals</WF><RS><R stem="vormals" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="664" ln="0"><WF>vormittag</WF><RS><R stem="vormittag" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="665" ln="0"><WF>vormittags</WF><RS><R stem="vormittags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="666" ln="0"><WF>vors</WF><RS><R stem="vors" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="667" ln="0"><WF>vorbehaltlich</WF><RS><R stem="vorbehaltlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="668" ln="0"><WF>vorbei</WF><RS><R stem="vorbei" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="669" ln="0"><WF>voran</WF><RS><R stem="voran" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="670" ln="0"><WF>voraus</WF><RS><R stem="voraus" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="671" ln="0"><WF>vorab</WF><RS><R stem="vorab" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="672" ln="0"><WF>vorher</WF><RS><R stem="vorher" pos="ADV" freq="1" ln="0"/><R stem="vorher" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="673" ln="0"><WF>vorhin</WF><RS><R stem="vorhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="674" ln="0" umlaut="T"><WF>vorueber</WF><RS><R stem="vorueber" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="675" ln="0" umlaut="T"><WF>vorwaerts</WF><RS><R stem="vorwaerts" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="676" ln="0"><WF>vorweg</WF><RS><R stem="vorweg" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="677" ln="0"><WF>voreinander</WF><RS><R stem="voreinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="678" ln="0"><WF>vorerst</WF><RS><R stem="vorerst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="679" ln="0"><WF>vorgestern</WF><RS><R stem="vorgestern" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="680" ln="0"><WF>vorn</WF><RS><R stem="vorn" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="681" ln="0"><WF>vorne</WF><RS><R stem="vorne" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="682" ln="0"><WF>vornehmlich</WF><RS><R stem="vornehmlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="683" ln="0"><WF>vornherein</WF><RS><R stem="vornherein" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="684" ln="0"><WF>vorzugsweise</WF><RS><R stem="vorzugsweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="685" ln="0"><WF>voll</WF><RS><R stem="voll" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="686" ln="0"><WF>vollends</WF><RS><R stem="vollends" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="687" ln="0" umlaut="T"><WF>waehrend</WF><RS><R stem="waehrend" pos="SUBORD" freq="1" ln="0"/><R stem="waehrend" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="688" ln="0"><WF>was</WF><RS><R stem="was" pos="WHPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="689" ln="0"><WF>wann</WF><RS><R stem="wann" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="690" ln="0"><WF>warum</WF><RS><R stem="warum" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="691" ln="0"><WF>wahrlich</WF><RS><R stem="wahrlich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="692" ln="0"><WF>weg</WF><RS><R stem="weg" pos="ADV" freq="1" ln="0"/><R stem="weg" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="693" ln="0"><WF>wegen</WF><RS><R stem="wegen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="694" ln="0"><WF>westlich</WF><RS><R stem="westlich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="695" ln="0" doubles="T"><WF>wessen</WF><RS><R stem="wessen" pos="WHPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="696" ln="0"><WF>weshalb</WF><RS><R stem="weshalb" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="697" ln="0"><WF>weswegen</WF><RS><R stem="weswegen" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="698" ln="0"><WF>wer</WF><RS><R stem="wer" pos="WHPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="699" ln="0"><WF>werktags</WF><RS><R stem="werktags" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="700" ln="0"><WF>wen</WF><RS><R stem="wen" pos="WHPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="701" ln="0"><WF>wenig</WF><RS><R stem="wenig" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="702" ln="0"><WF>wenigstens</WF><RS><R stem="wenigstens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="703" ln="0"><WF>wenn</WF><RS><R stem="wenn" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="704" ln="0"><WF>wenngleich</WF><RS><R stem="wenngleich" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="705" ln="0"><WF>wennschon</WF><RS><R stem="wennschon" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="706" ln="0"><WF>wem</WF><RS><R stem="wem" pos="WHPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="707" ln="0"><WF>weit</WF><RS><R stem="weit" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="708" ln="0"><WF>weiter</WF><RS><R stem="weiter" pos="ADV" freq="1" ln="0"/><R stem="weiter" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="709" ln="0"><WF>weiterhin</WF><RS><R stem="weiterhin" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="710" ln="0"><WF>weitaus</WF><RS><R stem="weitaus" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="711" ln="0"><WF>weil</WF><RS><R stem="weil" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="712" ln="0"><WF>weder</WF><RS><R stem="weder" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="713" ln="0"><WF>weh</WF><RS><R stem="weh" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="714" ln="0"><WF>wehe</WF><RS><R stem="wehe" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="715" ln="0"><WF>wider</WF><RS><R stem="wider" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="716" ln="0"><WF>wir</WF><RS><R stem="wir" pos="PERSPRON" freq="1" ln="0"/></RS></COCW>
+<COCW id="717" ln="0"><WF>wirklich</WF><RS><R stem="wirklich" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="718" ln="0"><WF>wie</WF><RS><R stem="wie" pos="SUBORD" freq="1" ln="0"/><R stem="wie" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="719" ln="0"><WF>wieso</WF><RS><R stem="wieso" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="720" ln="0"><WF>wieder</WF><RS><R stem="wieder" pos="ADV" freq="1" ln="0"/><R stem="wieder" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="721" ln="0"><WF>wiederum</WF><RS><R stem="wiederum" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="722" ln="0"><WF>wiewohl</WF><RS><R stem="wiewohl" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="723" ln="0"><WF>wo</WF><RS><R stem="wo" pos="SUBORD" freq="1" ln="0"/><R stem="wo" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="724" ln="0"><WF>wobei</WF><RS><R stem="wobei" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="725" ln="0"><WF>wodurch</WF><RS><R stem="wodurch" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="726" ln="0" umlaut="T"><WF>wofuer</WF><RS><R stem="wofuer" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="727" ln="0"><WF>wogegen</WF><RS><R stem="wogegen" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="728" ln="0"><WF>woher</WF><RS><R stem="woher" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="729" ln="0"><WF>wohin</WF><RS><R stem="wohin" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="730" ln="0"><WF>wohinter</WF><RS><R stem="wohinter" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="731" ln="0"><WF>wohingegen</WF><RS><R stem="wohingegen" pos="SUBORD" freq="1" ln="0"/></RS></COCW>
+<COCW id="732" ln="0"><WF>wohl</WF><RS><R stem="wohl" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="733" ln="0"><WF>wohlweislich</WF><RS><R stem="wohlweislich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="734" ln="0"><WF>womit</WF><RS><R stem="womit" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="735" ln="0" umlaut="T"><WF>womoeglich</WF><RS><R stem="womoeglich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="736" ln="0"><WF>wonach</WF><RS><R stem="wonach" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="737" ln="0"><WF>woneben</WF><RS><R stem="woneben" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="738" ln="0"><WF>woran</WF><RS><R stem="woran" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="739" ln="0"><WF>worauf</WF><RS><R stem="worauf" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="740" ln="0"><WF>woraus</WF><RS><R stem="woraus" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="741" ln="0"><WF>worein</WF><RS><R stem="worein" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="742" ln="0"><WF>worin</WF><RS><R stem="worin" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="743" ln="0" umlaut="T"><WF>worueber</WF><RS><R stem="worueber" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="744" ln="0"><WF>worum</WF><RS><R stem="worum" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="745" ln="0"><WF>worunter</WF><RS><R stem="worunter" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="746" ln="0"><WF>wovon</WF><RS><R stem="wovon" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="747" ln="0"><WF>wovor</WF><RS><R stem="wovor" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="748" ln="0"><WF>wozu</WF><RS><R stem="wozu" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="749" ln="0"><WF>wozwischen</WF><RS><R stem="wozwischen" pos="WHADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="750" ln="0"><WF>zeit</WF><RS><R stem="zeit" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="751" ln="0"><WF>zeitlebens</WF><RS><R stem="zeitlebens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="752" ln="0"><WF>zeitweise</WF><RS><R stem="zeitweise" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="753" ln="0"><WF>zu</WF><RS><R stem="zu" pos="SUBORD" freq="1" ln="0"/><R stem="zu" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="754" ln="0"><WF>zufolge</WF><RS><R stem="zufolge" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="755" ln="0"><WF>zugunsten</WF><RS><R stem="zugunsten" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="756" ln="0"><WF>zugrunde</WF><RS><R stem="zugrunde" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="757" ln="0"><WF>zugleich</WF><RS><R stem="zugleich" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="758" ln="0"><WF>zuungunsten</WF><RS><R stem="zuungunsten" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="759" ln="0"><WF>zuliebe</WF><RS><R stem="zuliebe" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="760" ln="0"><WF>zuletzt</WF><RS><R stem="zuletzt" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="761" ln="0"><WF>zum</WF><RS><R stem="zum" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="762" ln="0"><WF>zumindest</WF><RS><R stem="zumindest" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="763" ln="0"><WF>zumal</WF><RS><R stem="zumal" pos="SUBORD" freq="1" ln="0"/><R stem="zumal" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="764" ln="0" umlaut="T"><WF>zunaechst</WF><RS><R stem="zunaechst" pos="ADV" freq="1" ln="0"/><R stem="zunaechst" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="765" ln="0"><WF>zur</WF><RS><R stem="zur" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="766" ln="0" umlaut="T"><WF>zurueck</WF><RS><R stem="zurueck" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="767" ln="0"><WF>zuwider</WF><RS><R stem="zuwider" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="768" ln="0"><WF>zuweilen</WF><RS><R stem="zuweilen" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="769" ln="0" umlaut="T"><WF>zuzueglich</WF><RS><R stem="zuzueglich" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="770" ln="0"><WF>zusammen</WF><RS><R stem="zusammen" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="771" ln="0"><WF>zustande</WF><RS><R stem="zustande" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="772" ln="0"><WF>zuvor</WF><RS><R stem="zuvor" pos="ADV" freq="1" ln="0"/><R stem="zuvor" pos="VPREF" freq="1" ln="0"/></RS></COCW>
+<COCW id="773" ln="0" umlaut="T"><WF>zueinander</WF><RS><R stem="zueinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="774" ln="0" umlaut="T"><WF>zuerst</WF><RS><R stem="zuerst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="775" ln="0"><WF>zudem</WF><RS><R stem="zudem" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="776" ln="0"><WF>zutiefst</WF><RS><R stem="zutiefst" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="777" ln="0"><WF>zwecks</WF><RS><R stem="zwecks" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="778" ln="0"><WF>zweifellos</WF><RS><R stem="zweifellos" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="779" ln="0"><WF>zweifelsohne</WF><RS><R stem="zweifelsohne" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="780" ln="0"><WF>zweimal</WF><RS><R stem="zweimal" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="781" ln="0"><WF>zweitens</WF><RS><R stem="zweitens" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="782" ln="0"><WF>zwischen</WF><RS><R stem="zwischen" pos="PREP" freq="1" ln="0"/></RS></COCW>
+<COCW id="783" ln="0"><WF>zwischeneinander</WF><RS><R stem="zwischeneinander" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="784" ln="0"><WF>zwischendurch</WF><RS><R stem="zwischendurch" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="785" ln="0"><WF>zwar</WF><RS><R stem="zwar" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="786" ln="0"><WF>zirka</WF><RS><R stem="zirka" pos="ADV" freq="1" ln="0"/></RS></COCW>
+<COCW id="787" ln="0"><WF>ziemlich</WF><RS><R stem="ziemlich" pos="PART" freq="1" ln="0"/></RS></COCW>
+<COCW id="788" ln="0"><WF>!</WF><RS><R stem="!" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="789" ln="0"><WF>,</WF><RS><R stem="," pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="790" ln="0"><WF>-</WF><RS><R stem="-" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="791" ln="0"><WF>.</WF><RS><R stem="." pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="792" ln="0"><WF>:</WF><RS><R stem=":" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="793" ln="0"><WF>;</WF><RS><R stem=";" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="794" ln="0"><WF>?</WF><RS><R stem="?" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="795" ln="0"><WF>(</WF><RS><R stem="(" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="796" ln="0"><WF>)</WF><RS><R stem=")" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="797" ln="0"><WF>{</WF><RS><R stem="{" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="798" ln="0"><WF>}</WF><RS><R stem="}" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="799" ln="0"><WF>[</WF><RS><R stem="[" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="800" ln="0"><WF>]</WF><RS><R stem="]" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="801" ln="0"><WF>$</WF><RS><R stem="$" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="802" ln="0"><WF>'</WF><RS><R stem="'" pos="INTP" freq="1" ln="0"/></RS></COCW>
+<COCW id="803" ln="0"><WF></WF><RS><R stem="" pos="ZEIGEGESTE" freq="1" ln="0"/></RS></COCW>

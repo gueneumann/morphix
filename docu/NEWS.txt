@@ -1,0 +1,128 @@
+Hi everbody,
+
+i have installed a new version of the good old morphix system.
+Nothing has changed wrt. the old functionality, however some additional
+functionality as well some of the internals have changed.
+They are now collected as they just come into my mind.
+But note before: i am going do to further -- really interesting -- 
+improvements, if i get the chance to do it (god or other godlike people 
+will know); until that, those who want to work (not to play) with morphix
+are requested to use the current (old) manual (note, it is written in Japan..
+no, German, of course).
+
+We will consider:
+
+0. Loading system
+
+1. Lexikon
+
+2. General functionality
+
+3. Interface to TDL
+
+-----------------------------
+
+0. loading system
+
+Most of you will hate (and maybe kill) me for that, but i changed the system
+name from MORPHIX-3 to MORPHIX 
+
+thus you have to load the system MORPHIX; if you already use morphix, check
+that you change the system name
+
+1. Lexikon
+
+- instead of using hasharrays, we are now using TRIES:
+  
+  the TRIES come with an own package :trie
+
+  the exported functions are:
+
+  -     MAKE-TRIE (&OPTIONAL (NAME '*TRIE*)) 
+        creates a trie; if name is specified, then the new trie is bound
+        to name; otherwise the  default name *trie* is used
+        Example: (make-trie *my-trie*) returns a trie bound  to *my-trie*
+
+  -     INSERT-ENTRY (KEY INFO LEXICON &KEY (OVERWRITE NIL) 
+                                             (LEAF-NAME ':INFO)) 
+
+        inserts INFO under path KEY in LEXICON using the leaf-name
+        LEAF-NAME; if OVERWRITE is T, then the complete old INFO is 
+        overwritten
+
+  -     GET-ENTRY (KEY LEXICON &KEY (LEAF-NAME ':INFO))
+        traverses LEXICON using KEY and returns info located under LEAF-NAME,
+        if present, otherwise returns nil
+  
+  -     DELETE-ENTRY (KEY LEXICON
+		     &KEY (LEAF-NAME ':INFO)
+        deletes info found under path KEY in LEXICON located under LEAF-NAME
+        (note, this function not only deletes the information found under KEY
+        but also deletes the path, if possible, i.e., reorganizes the tree;
+        thus it is more clever than the simple versions described e.g., in 
+        Norvig:90
+
+  -     ENTRY-EXISTS-P (KEY LEXICON &KEY (LEAF-NAME ':INFO)) 
+        a boolean function which informs you whether lexicon contains 
+        information reachable by path KEY located under LEAF-NAME
+
+
+  -     my implementation uses sequence as a general date type;
+        thus it is possible to use either strings, vectors, or lists as 
+        the data structures for the TRIE; the current default is strings
+
+  -     the current version seems to be quite efficient; i have tested it
+        with a lexicon of about 100.000 entries and the average result of
+        calling the function time on get-entry, is this:
+
+                ; cpu time (non-gc) 0 msec user, 0 msec system
+                ; cpu time (gc)     0 msec user, 0 msec system
+                ; cpu time (total)  0 msec user, 0 msec system
+                ; real time  1 msec
+                ; space allocation:
+                23 cons cells,;  0 symbols, 40 other bytes
+
+Using tries in MORPHIX:
+we make use of these tries in morphix. there are two tries used,
+*stem-lexicon*, *fullform-lexicon*; the functions used to operate on these
+tries directly from the Morphix package are:
+
+insertion:
+(l-i stem info lexicon), where stem should be a string and lexicon one
+                         of the lexicons *stem-lexicon* and *fullform-lexicon*
+
+retrieval:
+(l-z stem lexicon)
+
+deletion:
+(l-r stem lexicon)
+
+2. General functionality
+
+-       when loading morphix, you will be provided with a base lexicon, of 
+        about 900 fullforms and 8000 stems
+-       if you want load additional lexcicons, you can
+        use the (very) simple function 
+        
+        (LOAD-LEXICA &OPTIONAL (FILES *LEX-FILES*)),
+        where FILES is a list of pathnames,
+        using the default, morphix would load all currently avaiable
+        lexicon FROM MY DIRECTORY, which means that yoy get
+        new: 10000 Verbs, 80000 Nouns, 16000 Adjectives
+
+3. There also exists an interface to TDL
+
+if you evaluate (rt wordform) then the result will be
+a list of tuples (STEM . STRING-OF-TDL-TYPE), e.g.,
+
+(rt "gefahren") gets
+
+(("fahr" . "VX-SUP-PERF") ("gefahr" . "NX-FEM-PL"))
+
+This string-types are then later expanded into real TDL instances by the 
+lexicon-parser
+
+
+Ok, that's all for the moment,
+
+Guenter

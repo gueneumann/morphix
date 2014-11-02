@@ -1,0 +1,32 @@
+\subsubsection{Morphix}
+
+\cal{Morphix} ist eine sehr schnelle und robuste Morphologie-Komponente. Sie wurde speziell zur Verarbeitung des Deutsches konzipiert, konnte aber zwischenzeitlich für Englisch und Italienisch angepasst werden. \cal{Morphix} kann eingesetzt werden zur Flexionsanalyse, Kompositaanalyse und zur morphologischen Generierung. Morphix ist lexikonbasiert und verfügt über umfangreiche Lexika (ca. 100.000 Stammeinträge), die aber einfach erweitert werden können. Dies gibt bereits eine gute Abdeckung auf beliebige Texte zwischen 80\% und 90\%. 
+
+Morphix ist sehr schnell und erreicht eine Laufzeit von ca. 0,005 Sekunden pro Wort. Die Fähigkeit, Komposita sehr schnell online zu berechnen ist kritisch, da gerade für die deutsche Sprache dies ein sehr produktiver Prozess ist. Morphix ist in ANSI CommonLisp implementiert und kann mittels XML-RPC Interfaces als Server einfach in Plattformen anderer Programmiersprachen (z. B. Java oder Python) integriert werden. 
+
+Technisch basiert Morphix auf der Integration einer klassifikationsbasierten Morphologie und endlichen Automaten. Im Detail bedeutet dies:
+\begin{enumerate}
+	\item Die Nutzung von \textbf{Tries} (Buchstabenbäumen) als einzige Speichereinheit für alle lexikalischen Informationen in Morphix (z.B. lexikalische Einträge, Präfixe, Flexionsendungen); neben den üblichen Operationen (Einfügen, Suchen, Löschen), sind eine Reihe komplexerer Funktionen verfügbar, darunter auch ein regulärer Trie-Matcher. Die Tries können auch als Grundlage für statistischbasierte Erweiterungen herangezogen werden, da  zu jedem Knoten Vorkommenshäufigkeiten berechnet und gespeichert werden können. 
+
+	\item Die \textbf{Kompositaanalyse} wird durch eine rekursive Trie-Traversierung realisiert, wobei ein Wort von links nach rechts verarbeitet wird. Dabei werden Two-Level-Regeln zur Dekomposition der betreffenden Wortform angwendet (z. B. zur Überprüfung ob im Kontext des Buchstabens S entsprechende Bedingungen erfüllt sind, um S als Fugenlaut zu charakterisieren). Hier einige weitere Details:
+	
+	\begin{itemize}
+	\item	Auf diese Weise kann Morphix sehr effizient alle möglichen Zerlegungen berechnen, wobei aber für jede Zerlegung überprüft wird, 				ob sie morphologisch sinnvoll ist. Der Algorithmus ist aber so ausgelegt (mittels Beam Search), dass z. B. auch nur eine Teilmenge berechnet wird, z. B. die Zerlegung mit den längsten Segmenten.
+	
+	
+	\item	Darüberhinaus kann die Kompositaanalyse sehr gut parametrisiert werden, z. B. in dem festgelegt werden kann, von welcher 		morphologischen 			Klasse die Segmente sein dürfen. Beispielsweise kann bestimmt werden, dass Segmente der geschlossenen Wortarten nicht erlaubt werden 		sollen, sodass das Wort ABFAHRT z. B. nicht zerlegt wird (in AB und FAHRT ), da AB in Morphix als Präposition kodiert ist. 
+	\item	Mit dem gleichen Mechanismus können aber auch mit dem gleiche Kompositalgorithmus auch adjektivische Komposita (z. B. BLAUGEFÄRBTE) zerlegt werden, indem neben Nomen als morphologischer Kopf auch Adjektive als solche definiert werden.
+	
+	\item	Morphix verfügt über eine Reihe von zusätzlichen Lexikonfunktionen, womit (neben der Flexionsinformation) zusätzliche Informationen 			hinzugefügt werden können, z. B. Subkategoriserungsrahmen oder semantische Klassen. Da diese Information auch dem Kompositaalgorithmus zur Verfügung steht, 		kann im Prinzip die Zerlegung auch semantisch gesteuert werden analog der Steuerung durch Wortarten.
+	
+	\item	 Morphix unterstützt eine robuste Komposita-Bearbeitung, wodurch die Komposita über die längsten Teilwörter identifiziert werden können, 			die im Lexikon enthalten sind. Beispielsweise würde für das Wort \textit{adfadfeimer} das Teilwort \textit{eimer} zurückgegeben, denn 				\textit{adfadf} ist kein gültiger lexikalischer Stamm.
+	\end{itemize}
+	
+	\item Morphix verfügt über eine allgemeine und parametrisierbare \textbf{Ausgabeschnittstelle}, die es erlaubt die verschieden Ausgabeformate zu 		erzeugen, d. s.:
+		\begin{itemize}
+		\item \textbf{Kompakte Disjunktion}: ambige Ergebnisse werden kompakt durch Disjunktion geliefert. Für diese Darstellung existiert eine umfangreiche 			erweiterte BNF Beschreibung
+		\item \textbf{Merkmalsvektor}: Es wird eine disjunktive Normalform berechnet, in der alle Merkmale aufgelistet sind mit den aktuellen Werten des 				des gerade analysierten Wortes. Der Vorteil dieser Darstellung ist es, dass zum einen gezielt spezielle Merkmale für die weitere Analyse (z. B. die syntaktische Analyse von Wortgruppen) ausgeblendet werden können (man spricht auch ``feature relaxation''), wodurch die Robustheit 			der nachfolgenden Prozesse gezielt gesteuert werden kann. Zum anderen haben wir gerade für diese Darstellung einen sehr schnellen 			Merkmalsunifikator implementiert, der dem Morphix-Package beigefügt ist. Dieser kann in Kombination mit Parsingstrategien benutzt 				werden, um eine Unifizierung der morpho-syntaktischen Informationen zu erreichen.
+		\item \textbf{XML}: Auf Basis der DNF Darstellung sind einfach, klare XML-Strukturen definiert, die es erlauben, die Morphixergebnisse auch in 				anderen Softwareplattformen zu integrieren.
+		\end{itemize}
+
+\end{enumerate}

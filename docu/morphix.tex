@@ -1,0 +1,199 @@
+\documentstyle[named,mymacros,epsf,11pt]{article}
+\begin{document}
+
+\newcommand{\mona}{{\sc morphix++}}
+\newcommand{\morphix}{{\sc morphix}}
+
+\title{A Fast and Portable Morphological Component 
+        for Inflectional Languages}
+
+
+\author{G\"{u}nter~Neumann}
+
+\date{Deutsches Forschungszentrum f\"ur K\"unstliche 
+Intelligenz GmbH\\
+Stuhlsatzenhausweg 3\\
+66123 Saarbr\"ucken, Germany\\
+{\tt neumann@dfki.uni-sb.de}}
+
+
+\maketitle
+
+\section{Introduction}
+
+In this technical paper we describe \mona\ the morphological
+component developed at the language technology lab of the DFKI
+GmbH. \mona\ is a descendant of \morphix\, a fast
+classification-based morphology  component for German
+\cite{Morphixmemo:86,Morphix:88}. \mona\ improves \morphix\ in that the
+classification-based approach has been combined with the well-known
+two-level approach, originally developed by
+\cite{Koskenniemi83,Koskenniemi84}. Actually, the extensions concern
+
+\begin{itemize}
+
+\item   the use of tries as the unique storage device for all sort of
+        lexical information in \mona\
+        (e.g., for lexical entries, prefix, inflectional endings);
+        besides the usual functionality (insertion, retrieval,
+        deletion), a number of more complex functions are available 
+        most notably a regular trie matcher, and
+
+\item   online processing of compounds which is realized 
+        by means a recursive trie traversal. 
+        During traversal two-level rules
+        are applied for recognizing possible decompositions
+        of the word form in question. \mona\ also supports
+        robust processing of compounds, such that
+        compounds are recognized by means of longest
+        matching substrings found in the lexicon; e.g., 
+        the word ``adfadfeimer''
+        will return result for ``eimer'' assuming that ``adfadf'' is no legal
+        lexical stem.
+
+\item   A generic and parameterizable output interface for \mona
+        has been implemented which returns a
+        normalized feature vector representation of the computed
+        morpho-syntactic information. It is possible to parameterize
+        the set of relevant morpho-syntactic features which supports lexical
+        tagging and feature relaxation.
+
+\item   On basis of this new interface a  very efficient specialized
+        constraint solver (called {\sc munify}) has been implemented 
+        which can be used in combination with parsing techniques
+        in order to perform unification of the morpho-syntactic
+        information.
+              
+
+\end{itemize}
+
+Thus, the basic processing strategy employed by \mona\ consists of 
+trie traversal combined with the application of finite state automata.
+
+Currently, \mona\ has been used for the German and Italian language.
+An English version is under way. \mona\ is implemented in Lisp
+following ansi Allegro Common Lisp. It has been tested under Solaris,
+Linux, Windows~98 and Windows-NT.
+The German version has a very broad coverage (a lexicon of
+more then 120.000 stem entries), and an excellent speed (5000 words/sec
+without compound handling, 2800 words/sec with compound processing
+(where for each compound all lexically possible
+decompositions are computed)\footnote{
+Measurement has been performed on a Sun~20 using an on-line lexicon of
+120.000 entries.}
+
+\section{The main control flow and toplevel function}
+
+
+
+\section{Lexicon Management}
+
+\subsection{The Trie abstract data type}
+The lexicon is implemented using a Trie abstract data type.
+The Trie implementation comes with its own package named ``TRIE''. The
+toplevel functions are:
+
+\begin{itemize}
+  
+\item   MAKE-TRIE (\&OPTIONAL (NAME *TRIE*)):\\
+        creates a trie; if name is specified, then the new trie is bound
+        to name; otherwise the  default name *trie* is used
+        Example: (make-trie *my-trie*) returns a trie bound  to *my-trie*
+
+\item   INSERT-ENTRY (KEY INFO LEXICON \&KEY (OVERWRITE NIL) 
+                                             (LEAF-NAME :INFO)):\\
+
+        inserts INFO under path KEY in LEXICON using the leaf-name
+        LEAF-NAME; if OVERWRITE is T, then the complete old INFO is 
+        overwritten
+
+\item   GET-ENTRY (KEY LEXICON \&KEY (LEAF-NAME :INFO)):\\
+        traverses LEXICON using KEY and returns info located under LEAF-NAME,
+        if present, otherwise returns nil
+  
+\item   DELETE-ENTRY (KEY LEXICON
+		     \&KEY (LEAF-NAME :INFO):\\
+        deletes info found under path KEY in LEXICON located under LEAF-NAME
+        (note, this function not only deletes the information found under KEY
+        but also deletes the path, if possible, i.e., reorganizes the tree;
+
+\item   ENTRY-EXISTS-P (KEY LEXICON \&KEY (LEAF-NAME ':INFO)):\\
+        a boolean function which informs you whether lexicon contains 
+        information reachable by path KEY located under LEAF-NAME
+
+
+\item   my implementation uses sequence as a general date type;
+        thus it is possible to use either strings, vectors, or lists as 
+        the data structures for the TRIE; the current default is
+        strings
+
+\item   regular Trie matcher:
+
+\end{itemize}
+
+\subsection{Toplevel functions for the lexicon}
+
+There are two tries used,
+*stem-lexicon*, *fullform-lexicon*; the functions used to operate on these
+tries are defined in the morphix package ``MORPHIX'':
+\begin{itemize}
+
+\item   insertion:\\
+        (l-i stem info lexicon), 
+        where stem should be a string and lexicon one
+        of the lexicons *stem-lexicon* and *fullform-lexicon*. INFO is
+        the integer representation of the corresponding POS-specific
+        information.
+
+\item   retrieval:\\
+        (l-z stem lexicon)
+
+\item   deletion:\\
+        (l-r stem lexicon)
+
+\end{itemize}
+
+
+\section{Processing of compounds}
+
+\section{Generation with \mona}
+
+\section{Flexible user interface}
+
+\subsection{Morphological features}
+\label{morph-bnf}
+
+The following table enumerates the features together with
+their domain:
+
+\begin{tabular}{lll}
+:cat     & $\rightarrow$ & :n :v :aux :modv :a :attr-a :def :indef :prep\\
+         &               & :relpron :perspron :refpron :posspron :whpron \\
+         &               & :ord :card :vpref :adv :whadv \\
+         &               & :coord :subord  :intp :part\\
+:mcat    & $\rightarrow$ & :n-adj :det-word\\
+:sym     & $\rightarrow$ & :open-para :closed-para :!sign :questsign\\ 
+         &               & :seperator :dot :dotdot :semikolon :comma\\
+:comp    & $\rightarrow$ & :p :c :s\\
+:comp-f  & $\rightarrow$ & :pred-used\\
+:det     & $\rightarrow$ & :none :indef :def\\
+:tense   & $\rightarrow$ & :pres :past :subjunct-1 :sibjunct-2\\
+:form    & $\rightarrow$ & :fin :infin :infin-zu :psp :prp \\
+         &               & :prp-zu :imp \\
+:person  & $\rightarrow$ & 1 2 :2a 3 :anrede\\
+:gender  & $\rightarrow$ & :nfm :m :f :nt\\
+:number  & $\rightarrow$ & :s :p\\
+:case    & $\rightarrow$ & :nom :gen :dat :akk\\     
+\end{tabular}
+
+\section{A small user guide}
+
+
+
+
+
+
+
+\bibliographystyle{named}
+\bibliography{bibtex-abbrev,morpholo,neummy}
+\end{document}

@@ -1,0 +1,61 @@
+Return-Path: scherf@clipper.dfki.uni-sb.de 
+Received: from [134.96.187.65] by cluster.dfki.uni-sb.de id XAA10607;
+          Sat, 30 Sep 1995 23:44:41 +0100
+Organization: DFKI Saarbruecken GmbH, D-66123 Saarbruecken (Germany)
+X-Sender: scherf@clipper.dfki.uni-sb.de (Unverified)
+Message-Id: <v01530500ac9380b75958@[134.96.187.65]>
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Date: Sun, 1 Oct 1995 00:46:10 +0100
+To: neumann
+From: scherf@clipper.dfki.uni-sb.de (Oliver Silvester Scherf)
+Subject: File morphix-gen.lisp
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Length: 1692
+
+
+Hallo Guenther,
+
+unter "~scherf/lisp/morphix/" findest Du das File "morphix-gen.lisp". Es
+enth=E4lt alles fuer das allgemeine Generierungsmodul.
+
+Die Top-Level-Funktion heisst 'generate und hat 2 feste Argumente:
+1. stem <string>, fuer die Kategorie wie z.B. 'reflexive ist der natuerlich
+nil zu setzen !!!!!!
+2. cat <grammatical category>. Die zugelassenen Kategorien brauch ich Dir
+nicht aufzuzaehlen, da bei nicht definierter Kategorie einfach ein Default
+genommen wird und alle derzeit aktuellen Kategorien aufgelistet werden.
+Also ruhig Schwachsinn schreiben, Du kriegst hoechstens Hilfe !!!
+
+Als Keywoerter sind natuerlich alle Keywoerter der einzelnen
+Generierungsfunktionen zugelassen. Auch hier gilt: Bei falscher Kombination
+von Kategorie und Keywoertern werden einfach die falschen aussortiert und
+gemeldet, wie die zulaessigen Keywoerter aussehen. Auch also einfach was
+eingeben.
+
+Beispiel fuer ein Aufruf:
+
+(generate "haus" 'noun) -> "Haus"
+(generate "haus" 'noun :numerus 'pl) -> "Haeuser"
+
+Also einfach mal probieren, es kann nichts passieren und entsprechende
+Hilfe wird ja automatisch gegeben.
+
+Achso, es gibt noch 2 feste optionale Keywoerter :funcall-table und
+:fun-para-table falls Du die Werte der globalen Variablen; *funcall-table*
+und *fun-para-table* nicht benutzen willst oder nur fuer einen Aufruf
+andere brauchst.
+
+Die globale Variable *funcall-table* ist eine einfache Assoc-Liste der Form:
+
+((<category> . <generate-function>))
+
+In *fun-para-table* fuer die einzelnen Kategorien die zulaessigen
+Keywoerter mit ihren Defaultwerten abgebunkert. Schau Dir am besten die
+Variablendefintion im File an. Sie stehen ja ganz am Anfang.
+
+Viel Spatz dabei !
+
+CU Oliver
+
+
