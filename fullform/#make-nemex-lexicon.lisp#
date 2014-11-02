@@ -140,9 +140,6 @@ callers:
 - create initial line for file for meta information 
   -> OK, must be moved to first line of file manually
 
-
-
-
-- do umlauting on copied file
--> manually check entries and change ATTR=XY entries and remove feature
+- do umlauting on file with attributes
+   -> manually check entries and change ATTR=XY entries and remove feature
 |#
